@@ -1,13 +1,13 @@
 <?php
 
-class Controller_Index
+class Controller extends View
 {
-
+	
 	public function __controller()
 	{
-		//nothing to see...
+		
 	}
-
+	
 }
 
 ?>
