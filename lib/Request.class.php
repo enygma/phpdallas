@@ -10,6 +10,7 @@ class Request
 
 	/**
 	 * Parse out the action and method from the request
+	 *
 	 * @return array $uriParts
 	 */
 	public function parseUri()
@@ -20,15 +21,29 @@ class Request
 
 	/**
 	 * Autoloader method
+	 *
 	 * @return void
 	 */
 	public function autoload()
 	{
 		echo 'autoload';
-		$uriParts = $this->parseUri();
 		
 	}
 
+	public function handle()
+	{
+		//handle the incoming request
+		//pass off to controller/method
+
+		list($action,$method) = $this->parseUri();
+		
+
+		// load the class
+		$class = 'Controller_'.ucwords(strtolower($action));
+		$requestObject = new $$class;
+		$requestObject->$method();
+		
+	}
 }
 
 ?>
