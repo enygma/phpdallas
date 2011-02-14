@@ -8,6 +8,11 @@ class View
 		//nothing to see here
 	}
 
+	public function setViewData($keyName.$value)
+	{
+		// set data to be output
+	}
+
 }
 
 ?>
