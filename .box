@@ -1,0 +1,9 @@
+general:
+	writeable_directories: []
+
+web:
+	document_root: /
+
+	index_list: [index.php,index.html]
+
+	far_future_expires: false

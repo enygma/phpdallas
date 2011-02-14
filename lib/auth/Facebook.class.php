@@ -1,6 +1,6 @@
 <?php
 
-class Auth_Facebook
+class Auth_Facebook extends Auth
 {
 
 	public function __construct()

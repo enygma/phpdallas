@@ -1,6 +1,6 @@
 <?php
 
-class Auth_Twitter
+class Auth_Twitter extends Auth
 {
 
 	public function __construct()
