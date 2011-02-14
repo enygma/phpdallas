@@ -58,7 +58,9 @@ class Request
 	public function autoload($className)
 	{
 		$foundPath = $this->__findFile($className);
-		require_once($foundPath);
+		if(!empty($foundPath)){
+			require_once($foundPath);
+		}
 	}
 
 	public function handle()
@@ -81,6 +83,7 @@ class Request
 
 		if(is_file($viewFile)){
 			$view = new View();
+			$view->setViewPath($this->_view_path);
 			$view->render($requestObject->_viewData,$viewFile);
 		}else{
 			throw new Exception('View file not found! ('.$action.'/'.$method.')');
