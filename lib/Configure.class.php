@@ -26,7 +26,15 @@ class Configure
 
 	public static function getConfigValue($configName)
 	{
-		return (array_key_exists($configName,self::$_configValues)) ? self::$_configValues[$configName] : null;
+		if(is_array($configName)){
+			$configValues = array();
+			foreach($configName as $name){
+				$configValues[] = (array_key_exists($name,self::$_configValues)) ? self::$_configValues[$name] : null;
+			}
+			return $configValues;
+		}else{
+			return (array_key_exists($configName,self::$_configValues)) ? self::$_configValues[$configName] : null;
+		}
 	}
 }
 

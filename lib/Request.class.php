@@ -22,7 +22,7 @@ class Request
 	public function parseUri()
 	{
 		$requestUri = $_SERVER['REQUEST_URI'];
-		$requestUri = str_replace('/index.php/','',$requestUri);
+		$requestUri = str_replace(array('/index.php/','/index.php'),'',$requestUri);
 		$uriParts = (empty($requestUri)) ? array('','') : explode('/',$requestUri);
 
 		return $uriParts;
