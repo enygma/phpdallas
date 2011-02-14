@@ -12,7 +12,6 @@ class Controller_Index extends Controller
 	{
 		echo 'test';
 		$this->setViewData('testing',array(1,2,3));
-		
 	}
 
 }

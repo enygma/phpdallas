@@ -2,12 +2,16 @@
 
 class Request
 {
-	private $_site_path;
+	private $_site_path 		= null;
+	private $_view_path 		= null;
+	private $_controller_path 	= null;
 
 	public function __construct()
 	{
 		//nothing to see
-		$this->_site_path = $_SERVER['DOCUMENT_ROOT'].'/site/controllers';
+		$this->_site_path 	= $_SERVER['DOCUMENT_ROOT'];
+		$this->_controller_path = $this->_site_path.'/site/controllers';
+		$this->_view_path 	= $this->_site_path.'/site/view';
 	}
 
 	/**
@@ -17,7 +21,10 @@ class Request
 	 */
 	public function parseUri()
 	{
-		$uriParts = (empty($_SERVER['QUERY_STRING'])) ? array('','') : explode('/',$_SERVER['QUERY_STRING']);
+		$requestUri = $_SERVER['REQUEST_URI'];
+		$requestUri = str_replace('/index.php/','',$requestUri);
+		$uriParts = (empty($requestUri)) ? array('','') : explode('/',$requestUri);
+
 		return $uriParts;
 	}
 	
@@ -32,7 +39,7 @@ class Request
 		}
 		
 		// look through our directories
-		$directoryIterator = new RecursiveDirectoryIterator($_SERVER['DOCUMENT_ROOT']);
+		$directoryIterator = new RecursiveDirectoryIterator($this->_site_path);
 		foreach(new RecursiveIteratorIterator($directoryIterator) as $file){
 			$currentPath = $file->getPath().'/'.$file->getFilename();
 			
@@ -70,6 +77,14 @@ class Request
 		$requestObject->$method();
 		
 		// output to our view
+		$viewFile = $this->_view_path.'/'.$action.'/'.$method.'.php';
+
+		if(is_file($viewFile)){
+			$view = new View();
+			$view->render($requestObject->_viewData,$viewFile);
+		}else{
+			throw new Exception('View file not found! ('.$action.'/'.$method.')');
+		}
 		
 	}
 }
