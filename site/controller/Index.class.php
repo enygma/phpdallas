@@ -12,9 +12,8 @@ class Controller_Index extends Controller
 	{
 
 		$db = new Database();
-		$db->select('foo',null,array('title'=>'test meeting'));
+		$meetingResult = $db->select('meetings',null,array('title'=>'test meeting'));
 
-		echo 'test';
 		$this->setViewData('testing',array(1,2,3));
 	}
 
