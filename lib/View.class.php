@@ -3,12 +3,14 @@
 class View
 {
 
-	public $_viewData = array( );
-	public $_viewPath = null;
+	public $_viewData 	= array( );
+	public $_viewPath 	= null;
+	public $html		= null;
 
 	public function __construct()
 	{
 		//nothing to see here
+		$this->html = new Html();
 	}
 
 	public function setViewData($keyName,$value)
@@ -26,7 +28,6 @@ class View
 	{
 		// see if we have a template to use
 		$template = new Template();
-		
 		if(is_file($filePath)){
 			ob_start();
 			extract($viewData);
@@ -37,8 +38,9 @@ class View
 		if($templateFile = Configure::getConfigValue('template.file')){
 			$templateFilePath = $this->_viewPath.'/'.$templateFile;
 			require_once($templateFilePath);
+		}else{
+			echo $content;
 		}
-		echo $content;
 	}
 }
 
