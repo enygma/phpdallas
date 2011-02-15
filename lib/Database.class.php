@@ -21,10 +21,30 @@ class Database
 		return $this->_db;
 	}
 
-	public function select($table,$where)
+	public function select($table,$columns=null,$where=null)
 	{
-		$db = $this->connect();
-		var_dump($db);
+		$db 		= $this->connect();
+		$columns 	= ($columns===null) ? array('*') : $columns;
+		$sql 		= 'select '.join(',',$columns).' from '.$table;
+		$prepare	= array();
+
+		if($where!==null){			
+			$where_sql=array();
+			foreach($where as $column => $value){
+				$where_sql[]=$column.'=:'.$column;
+			}
+			$sql.=' '.join(' and ',$where_sql);
+			$prepare[$column] = $value;
+		}
+		
+		echo $sql;
+		
+		// prepare the statement
+		$stmt = $db->prepare($sql,array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
+		$stmt->execute($prepare);
+		$result = $stmt->fetchAll();
+		
+		var_dump($result);
 	}
 
 }

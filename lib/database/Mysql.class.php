@@ -2,6 +2,7 @@
 
 class Database_Mysql extends Database
 {
+	private $_db	= null;
 
 	public function __construct()
 	{
@@ -10,16 +11,19 @@ class Database_Mysql extends Database
 
 	public function connect()
 	{
-		$arr = array(
-			'database.username',
-			'database.password',
-			'database.name',
-			'database.host'
-		);
-		$values = Configure::getConfigValue($arr);
-		//print_r($values);		
-
-		//TODO make the mysql connection here
+		list($user,$pass,$name,$host) = Configure::getConfigValue(array(
+			'database.username','database.password',
+			'database.name','database.host'
+		));
+		
+		$dsn = 'mysql:dbname='.$name.';host='.$host;
+		
+		try{
+			$this->_db = new PDO($dsn,$user,$pass);
+			return $this->_db;
+		}catch(PDOException $e){
+			throw new Exception('Database connection failure: '.$e->getMessage());
+		}
 	}
 }
 
