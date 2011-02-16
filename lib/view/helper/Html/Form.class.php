@@ -6,6 +6,12 @@ class Form extends Html
 	{
 	}
 	
+	/**
+	 * Given an array, builds out the HTML attributes version
+	 *
+	 * @param array $attributes Attributes array
+	 * @return string HTML attributes
+	 */
 	private function _buildAttributes($attributes)
 	{
 		$attributeList = array();
@@ -15,11 +21,48 @@ class Form extends Html
 		return implode(" ",$attributeList);
 	}
 
+	/**
+	 * Return opening form tag
+	 *
+	 * @param string $action Form action
+	 * @param string $type Form type
+	 *
+	 * @return string Form open tag string
+	 */
+	public function open($action=null,$type=null)
+	{
+		if($action==null){
+			$action = '/'.implode('/',Configure::getConfigValue('parseUri'));
+		}
+		return '<form action="'.$action.'" method="POST">';
+	}
+
+	/**
+	 * Return form closing tag string
+	 *
+	 * @return string Form close tag string
+	 */
+	public function close()
+	{
+		return '</form>';
+	}
+
+	/**
+	 * Generic "input" tag handler (since many form tags are input types)
+	 *
+	 * @param string $type Type attribute (ex. "input" or "password")
+	 * @param string $name Name attribute
+	 * @param string $value[optional] Value attribute
+	 * @param array $options[optional] Additional options
+	 *
+	 * @return string HTML input tag string
+	 */
 	private function input($type,$name,$value=null,$options=null)
 	{
 		$default = array(
 			'type' => $type,
-			'name' => $name
+			'name' => $name,
+			'value'=> $value
 		);
 		 // merge the options if there are some
                 if($options){
@@ -28,17 +71,44 @@ class Form extends Html
                 return '<input '.$this->_buildAttributes($default).'>';
 	}
 
+	/**
+	 * Generate input type="text" tag
+	 *
+	 * @param string $name Name attribute
+	 * @param string $value[optional] Value attribute
+	 * @param array $options[optional] Additional parameters
+	 *
+	 * @return string Input tag string
+	 */
 	public function text($name,$value=null,$options=null)
 	{
 		$options = ($options!=null) ? array_merge(array('size'=>15),$options) : $options;
 		return $this->input('text',$name,$value,$options);
 	}	
 	
+	/**
+         * Generate input type="submit" tag
+         *
+         * @param string $name Name attribute
+         * @param string $value[optional] Value attribute
+         * @param array $options[optional] Additional parameters
+         *
+         * @return string Input tag string
+         */
 	public function submit($name='submit',$value='submit',$options=null)
 	{
 		return $this->input('submit',$name,$value,$options);
 	}
 
+	/**
+         * Generate textarea tag string
+         *
+         * @param string $name Name attribute
+         * @param string $value[optional] Value attribute
+         * @param array $options[optional] Additional parameters
+         *
+         * @return string Input tag string
+         */
 	public function textarea($name,$value=null,$options=null)
 	{
 		$defaults = array(
