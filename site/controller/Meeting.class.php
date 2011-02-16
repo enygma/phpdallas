@@ -16,10 +16,29 @@ class Controller_Meeting extends Controller
 	{
 		var_dump($this->filter->get('testing'));
 
-		// build the form to output
-		$addForm = new Form();
+	}
 
-		$this->setViewData('addForm',$addForm);
+	public function suggest()
+	{
+		$valid = new Validation();
+
+		$posted = $this->filter->post();
+		$valid->setValidation(array(
+			'topic_title' 	=> 'required',
+			'topic_summary' => 'required'
+		));
+
+		if($this->filter->post('sub') && $valid->validate($posted)){
+			$db = new Database();
+			$db->insert('suggest',array(
+				'title'		=> $this->filter->post('topic_title'),
+				'summary'	=> $this->filter->post('topic_summary')
+			));
+			
+		}else{
+			$this->setViewData('failureMsg',$valid->getFailureMessages());
+		}
+
 	}
 
 }

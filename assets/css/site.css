@@ -18,3 +18,9 @@ a {
 	text-align: left;
 	padding: 5px;
 }
+
+td.form-title {
+	color: #FFFFFF;
+	font-size: 12px;
+	vertical-align: top;
+}
