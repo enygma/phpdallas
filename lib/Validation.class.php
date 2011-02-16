@@ -18,7 +18,6 @@ class Validation
 		if(!is_array($ruleset)){ $ruleset = array($ruleset); }
 		foreach($ruleset as $fieldName => $rule){
 			$ruleChecks = explode('|',$rule);
-			print_r($ruleChecks);
 			$this->_validationRules[$fieldName]=$ruleChecks;	
 		}
 	}

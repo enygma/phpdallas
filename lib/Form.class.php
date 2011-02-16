@@ -8,6 +8,10 @@ class Form
 		//nothing to see here
 	}
 
+	public function render()
+	{
+		echo 'render form';
+	}
 }
 
 ?>
