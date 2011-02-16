@@ -1,0 +1,20 @@
+body {
+	background: url('/assets/img/badge_bg.gif') top center #000;
+	padding-top: 60px;
+}
+li {
+	padding: 2px;
+}
+a {
+	color: #FFFFFF;
+}
+#content {
+	width: 400px;
+	background-color: #000000;
+	border: 1px solid #CCCCCC;
+	color: #FFFFFF;
+	font-family: verdana,arial,helvetica;
+	font-size: 11px;
+	text-align: left;
+	padding: 5px;
+}
