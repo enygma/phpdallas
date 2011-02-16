@@ -32,13 +32,15 @@ class Filter
 		$this->_postValues = $_POST;
 		unset($_POST);
 	}
-	public function get($keyName)
+	public function get($keyName=null)
 	{
-		return (isset($this->_getValues[$keyName])) ? $this->_getValues : null;	
+		if($keyName==null){ return $this->_getValues; }
+		return (isset($this->_getValues[$keyName])) ? $this->_getValues[$keyName] : null;	
 	}
-	public function post($keyName)
+	public function post($keyName=null)
 	{
-		 return (isset($this->_postValues[$keyName])) ? $this->_postValues : null;
+		if($keyName==null){ return $this->_postValues; }
+		return (isset($this->_postValues[$keyName])) ? $this->_postValues[$keyName] : null;
 	}
 
 	//-----------------------------

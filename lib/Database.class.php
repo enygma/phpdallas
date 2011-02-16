@@ -81,8 +81,22 @@ class Database
 	 * @param string $table Table name
 	 * @param array $insertValues Values to insert into the table (associative)
 	 */
-	public function insert($table,$insertValues){
-		//not implemented
+	public function insert($table,$insertValues)
+	{
+		$db	= $this->connect();
+		$sql	= 'insert into '.$table;
+
+		$columns = array();
+		$prepare = array();
+		foreach($insertValues as $columnName => $value){
+			$columns[]=$columnName;
+			$prepare[':'.$columnName] = $value;
+		}
+		$sql.=' ('.implode(',',$columns).') values ('.implode(',',array_keys($prepare)).')';
+
+		 // prepare the statement
+                $stmt = $db->prepare($sql,array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
+                $stmt->execute($prepare);
 	}
 
 }

@@ -5,6 +5,8 @@ class Validation
 	private $_validationRules = array();
 	private $_failureMessages = array();
 
+	private $_defaultFailureMsg = 'The field "%s" did not pass validation.';
+
 	public function __construct()
 	{
 		///nothing to see here
@@ -32,6 +34,9 @@ class Validation
 					$method = '_validate'.ucwords(strtoupper($rule));
 					if(method_exists($this,$method)){
 						$result = $this->$method($data);
+						if($result==false){
+							$this->_failureMessages[]=sprintf($this->_defaultFailureMsg,$fieldName);
+						}
 					}else{
 						echo 'validation method for "'.$rule.'" does not exist';
 					}
@@ -40,11 +45,12 @@ class Validation
 				$status = false;
 			}
 		}
-		return $status;
+		return (count($this->_failureMessages)>0) ? false : true;
 	}
-	public function formValidate($submitName)
+
+	public function getFailureMessages()
 	{
-		
+		return $this->_failureMessages;
 	}
 
 	//------------------
@@ -60,6 +66,10 @@ class Validation
 	{
 		$filter = new Filter();
 		return $filter->filter($data,'email');
+	}
+	private function _validateRequired($data)
+	{
+		return (empty($data)) ? false : true;
 	}
 
 }

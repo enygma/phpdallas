@@ -24,6 +24,7 @@ class Request
 		$requestUri = str_replace('?'.$_SERVER['QUERY_STRING'],'',$_SERVER['REQUEST_URI']);
 		$requestUri = str_replace(array('/index.php/','/index.php'),'',$requestUri);
 		$uriParts = (empty($requestUri)) ? array('','') : explode('/',$requestUri);
+		if(empty($uriParts[0])){ array_shift($uriParts); }
 
 		return $uriParts;
 	}
@@ -68,7 +69,11 @@ class Request
 		//handle the incoming request
 		//pass off to controller/method
 
-		list($action,$method) = $this->parseUri();
+		$parseUri = $this->parseUri();
+		Configure::setConfigValue('parseUri',$parseUri);
+	
+		$action = (!isset($parseUri[0]) || empty($parseUri[0])) ? 'index' : $parseUri[0];
+		$method = (!isset($parseUri[1]) || empty($parseUri[1])) ? 'index' : $parseUri[1];
 
 		if(empty($action)){ $action = 'index'; }
 		if(empty($method)){ $method = 'index'; }

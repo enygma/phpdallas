@@ -36,6 +36,11 @@ class Configure
 			return (array_key_exists($configName,self::$_configValues)) ? self::$_configValues[$configName] : null;
 		}
 	}
+
+	public static function setConfigValue($configName,$configValue)
+	{
+		self::$_configValues[$configName] = $configValue;
+	}
 }
 
 ?>
