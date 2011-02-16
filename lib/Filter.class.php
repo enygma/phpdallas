@@ -3,6 +3,9 @@
 class Filter
 {
 
+	private $_getValues 	= array();
+	private $_postValues 	= array();
+
 	public function __construct()
 	{
 		//nothing to see here
@@ -19,6 +22,26 @@ class Filter
 			echo 'validation method for "'.$type.'" does not exist';
 		}
 	}
+	public function importGet()
+	{
+		$this->_getValues = $_GET;
+		unset($_GET);
+	}
+	public function importPost()
+	{
+		$this->_postValues = $_POST;
+		unset($_POST);
+	}
+	public function get($keyName)
+	{
+		return (isset($this->_getValues[$keyName])) ? $this->_getValues : null;	
+	}
+	public function post($keyName)
+	{
+		 return (isset($this->_postValues[$keyName])) ? $this->_postValues : null;
+	}
+
+	//-----------------------------
 
 	private function _filterString($data)
 	{

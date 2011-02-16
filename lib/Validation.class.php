@@ -42,6 +42,10 @@ class Validation
 		}
 		return $status;
 	}
+	public function formValidate($submitName)
+	{
+		
+	}
 
 	//------------------
 	private function _validateString($data)

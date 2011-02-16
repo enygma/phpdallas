@@ -21,7 +21,7 @@ class Request
 	 */
 	public function parseUri()
 	{
-		$requestUri = $_SERVER['REQUEST_URI'];
+		$requestUri = str_replace('?'.$_SERVER['QUERY_STRING'],'',$_SERVER['REQUEST_URI']);
 		$requestUri = str_replace(array('/index.php/','/index.php'),'',$requestUri);
 		$uriParts = (empty($requestUri)) ? array('','') : explode('/',$requestUri);
 
@@ -76,6 +76,12 @@ class Request
 		// load the class
 		$class = 'Controller_'.ucwords(strtolower($action));
 		$requestObject = new $class;
+
+		// filter the incoming superglobals
+                $requestObject->filter = new Filter();
+                $requestObject->filter->importGet();
+                $requestObject->filter->importPost();
+
 		$requestObject->$method();
 		
 		// output to our view
