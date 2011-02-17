@@ -24,7 +24,7 @@ class View
 		$this->_viewPath = $viewPath;
 	}
 
-	public function render($viewData,$filePath)
+	public function render($viewData,$filePath,$useTemplate=true)
 	{
 		// see if we have a template to use
 		$template = new Template();
@@ -35,7 +35,8 @@ class View
 			$content = ob_get_contents();
 			ob_end_clean();
 		}
-		if($templateFile = Configure::getConfigValue('template.file')){
+		$templateFile = Configure::getConfigValue('template.file');
+		if($templateFile != null && $useTemplate==true){
 			$templateFilePath = $this->_viewPath.'/'.$templateFile;
 			require_once($templateFilePath);
 		}else{

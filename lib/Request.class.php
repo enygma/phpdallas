@@ -95,7 +95,7 @@ class Request
 		if(is_file($viewFile)){
 			$view = new View();
 			$view->setViewPath($this->_view_path);
-			$view->render($requestObject->_viewData,$viewFile);
+			$view->render($requestObject->_viewData,$viewFile,$requestObject->useTemplate);
 		}else{
 			throw new Exception('View file not found! ('.$action.'/'.$method.')');
 		}
