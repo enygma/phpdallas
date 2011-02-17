@@ -10,7 +10,6 @@ class Controller_Index extends Controller
 	
 	public function index()
 	{
-
 		$db = new Database();
 		$meetingResult = $db->select('meetings',null,array('title'=>'test meeting'));
 
@@ -27,6 +26,16 @@ class Controller_Index extends Controller
 		
 
 		$this->setViewData('testing',array(1,2,3));
+	}
+
+	public function meetup()
+	{
+		// get the listing of meetups
+		$meetup = new Meetup();
+		$events = $meetup->getMeetupEvents();
+
+		foreach($events as $event){
+		}
 	}
 
 }
