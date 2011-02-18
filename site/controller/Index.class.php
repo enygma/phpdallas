@@ -30,11 +30,16 @@ class Controller_Index extends Controller
 
 	public function meetup()
 	{
+		$this->useTemplate = false;
+		
 		// get the listing of meetups
 		$meetup = new Meetup();
-		$events = $meetup->getMeetupEvents();
+		$events = $meetup->getPastMeetupEvents();
+		
+		//echo '<pre>'; var_dump($events); echo '</pre>';
 
-		foreach($events as $event){
+		foreach($events->items->item as $event){
+			//echo $event->name.'<br/>';
 		}
 	}
 

@@ -70,6 +70,16 @@ class Form extends Html
                 }
                 return '<input '.$this->_buildAttributes($default).'>';
 	}
+	
+	public function select($name,$values,$options=null)
+	{
+		$html = '<select name="'.$name.'">';
+		foreach($values as $index => $value){
+			$html .= '<option value="'.$index.'">'.$value.'</option>';
+		}
+		$html .= '</select>';
+		return $html;
+	}
 
 	/**
 	 * Generate input type="text" tag
@@ -118,6 +128,14 @@ class Form extends Html
 		);	
 		if($options!=null){ $options = array_merge($defaults,$options); }else{ $options=$defaults; }
 		return '<textarea '.$this->_buildAttributes($options).'></textarea>';
+	}
+	
+	public function multiDateSelect($name,$mo=null,$day=null,$yr=null)
+	{	
+		return 
+			$this->select($name.'_mo',range(1,12)).
+			$this->select($name.'_day',range(1,31)).
+			$this->select($name.'_day',range(date('Y'),date('Y')+10));
 	}
 }
 
