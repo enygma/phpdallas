@@ -7,12 +7,15 @@
 	</head> 
  
 	<body>	
-		<center>
-		<img src="/assets/img/DallasPHP_Badge.png" /> 
-		<br/> 
-		<div id="content">
-		<?php echo $content; ?>
-		</div>
-		</center>
+		<table cellpadding="0" cellspacing="0" border="0" width="90%">
+		<tr>
+			<td valign="top" style="width:180px"><img src="/assets/img/DallasPHP_Badge.png" /></td>
+			<td align="left">
+				<div id="content">
+				<?php echo $content; ?>
+				</div>
+			</td>
+		</tr>
+		</table>
 	</body> 
 </html> 

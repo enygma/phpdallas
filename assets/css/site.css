@@ -1,6 +1,6 @@
 body {
 	background: url('/assets/img/badge_bg.gif') top center #000;
-	padding-top: 60px;
+	padding-top: 40px;
 }
 li {
 	padding: 2px;
@@ -9,7 +9,7 @@ a {
 	color: #FFFFFF;
 }
 #content {
-	width: 400px;
+	width: 90%;
 	background-color: #000000;
 	border: 1px solid #CCCCCC;
 	color: #FFFFFF;
@@ -23,4 +23,8 @@ td.form-title {
 	color: #FFFFFF;
 	font-size: 12px;
 	vertical-align: top;
+}
+td {
+	color: #FFFFFF;
+	font-size: 12px;
 }
