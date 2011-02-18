@@ -2,7 +2,7 @@
 
 class Controller extends View
 {
-	public $use_template = true;
+	public $useTemplate = true;
 
 	public function __controller()
 	{
