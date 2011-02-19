@@ -70,7 +70,7 @@ class Database
 		// prepare the statement
 		$stmt = $db->prepare($sql,array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
 		$stmt->execute($prepare);
-		$result = $stmt->fetchAll();
+		$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		
 		return $result;
 	}
