@@ -1,6 +1,6 @@
 <?php
 
-class UserModel extends Model
+class Model_User extends Model
 {
 	protected $_tableName = 'users';
 
@@ -16,8 +16,15 @@ class UserModel extends Model
 	{
 		if($userId!=null){
 			$user = $this->findById($userId);
-			print_r($user);
+			echo 'found user: '; print_r($user[0]);
+			$this->apply($user[0]);
 		}	
+	}
+	
+	public function beforeSave()
+	{
+		//hash the password
+		$this->password = md5($this->password);
 	}
 }
 

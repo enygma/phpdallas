@@ -20,7 +20,7 @@ class Controller_Meeting extends Controller
 		
 		$valid->setValidation(array(
 			'meetup_name' => 'required',
-			'meetup_desc' => 'required'
+			'meetup_desc' => 'required',
 			'meetup_date' => 'required'
 		));
 		

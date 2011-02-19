@@ -17,14 +17,16 @@ class Controller_User extends Controller
 
 		$this->useTemplate = false;
 
-		$user = new UserModel();
+		$user = new Model_User();
                 $user->username = 'test';
                 $user->password = 'here';
                 $user->full_name = 'full name';
                 $user->email    = 'me@me.com';
                 //$user->create();
 
-		$user = new UserModel(1);
+		$user = new Model_User(1);
+		echo '<hr/><pre>'; var_dump($user); echo '</pre>';
+		echo 'user: '.$user->username;
 
 		return true;
 
