@@ -1,4 +1,10 @@
 # Initial database structure
+drop database phpdallas;
+
+create database phpdallas;
+	
+use phpdallas;
+
 create table `meetings` (
 	title varchar(100), 
 	detail TEXT, 
