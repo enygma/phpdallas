@@ -7,7 +7,7 @@ class Html extends ViewHelper
 	public function __construct()
 	{
 		//nothing to see here
-		$this->form = new Form();
+		$this->form = new FormHelper();
 	}
 
 	public function link($text,$link)

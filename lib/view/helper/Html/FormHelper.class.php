@@ -1,6 +1,6 @@
 <?php
 
-class Form extends Html
+class FormHelper extends Html
 {
 	public function __construct()
 	{
@@ -94,7 +94,13 @@ class Form extends Html
 	{
 		$options = ($options!=null) ? array_merge(array('size'=>15),$options) : $options;
 		return $this->input('text',$name,$value,$options);
-	}	
+	}
+	
+	public function password($name,$value=null,$options=null)
+	{
+		$options = ($options!=null) ? array_merge(array('size'=>15),$options) : $options;
+		return $this->input('password',$name,$value,$options);
+	}
 	
 	/**
          * Generate input type="submit" tag

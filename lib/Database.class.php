@@ -62,9 +62,9 @@ class Database
 			$where_sql=array();
 			foreach($where as $column => $value){
 				$where_sql[]=$column.'=:'.$column;
+				$prepare[':'.$column] = $value;
 			}
 			$sql.=' where '.join(' and ',$where_sql);
-			$prepare[':'.$column] = $value;
 		}
 		
 		// prepare the statement
