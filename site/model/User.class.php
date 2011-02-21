@@ -2,7 +2,8 @@
 
 class Model_User extends Model
 {
-	protected $_tableName = 'users';
+	protected $_tableName 	= 'users';
+	protected $_unique 		= true;
 
 	public $_columns = array(
 		'username' 	=> array('type' => 'string','length' => 50),
@@ -16,12 +17,11 @@ class Model_User extends Model
 	{
 		if($userId!=null){
 			$user = $this->findById($userId);
-			echo 'found user: '; print_r($user[0]);
-			$this->apply($user[0]);
+			if($user[0]){ $this->apply($user[0]); }
 		}	
 	}
 	
-	public function beforeSave()
+	public function beforeCreate()
 	{
 		//hash the password
 		$this->password = md5($this->password);

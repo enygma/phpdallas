@@ -28,3 +28,6 @@ td {
 	color: #FFFFFF;
 	font-size: 12px;
 }
+span.validationErrors {
+	color: #FFFFFF;
+}

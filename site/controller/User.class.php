@@ -14,24 +14,7 @@ class Controller_User extends Controller
 
 	public function create()
 	{
-
-		$this->useTemplate = false;
-
-		$user = new Model_User();
-                $user->username = 'test';
-                $user->password = 'here';
-                $user->full_name = 'full name';
-                $user->email    = 'me@me.com';
-                //$user->create();
-
-		$user = new Model_User(1);
-		echo '<hr/><pre>'; var_dump($user); echo '</pre>';
-		echo 'user: '.$user->username;
-
-		return true;
-
-		$this->useTemplate = false;
-		$valid 	= new Validaton();
+		$valid 	= new Validation();
 		$posted = $this->filter->post();
 
 		$valid->setValidation(array(
@@ -41,8 +24,9 @@ class Controller_User extends Controller
 			'email' 	=> 'required|email'
 		));
 
-		if($this->filter->post('sub') && $valid->validate($posted)){
-			$user = new UserModel();
+		if($this->filter->post('submit') && $valid->validate($posted)){
+			
+			$user = new Model_User();
 
 			$user->username = $this->filter->post('username');
 			$user->password = $this->filter->post('password');
@@ -50,25 +34,30 @@ class Controller_User extends Controller
 			$user->email	= $this->filter->post('email');
 
 			$user->create();
-
-			/*
-			$db = new Database();
-			$db->insert('users',array(
-				'username'	=> $this->filter->post('username'),
-				'password'	=> md5($this->filter->post('password')),
-				'full_name'	=> $this->filter->post('full_name'),
-				'email'		=> $this->filter->post('email')
-			);
-			*/
+		}else{
+			$this->setViewData('validationErrors',$valid->getFailureMessages());
 		}
 	}
 
 	public function login()
 	{
-		$this->useTemplate = false;
 		$valid 	= new Validation();
 		$posted = $this->filter->post();
+		$this->useTemplate = false;
+		
+		if($this->filter->post('submit') && $valid->validate($posted)){
+			$user 	= new Model_User();
+			$result = $user->findSingleByUsername($this->filter->post('username'));
 
+			if($result!=null && md5($posted['password'])==$result['password']){
+				echo 'pass';
+				// set up the session and forward
+			}else{
+				echo 'fail';
+			}
+		}else{
+			$this->setViewData('validationErrors',$valid->getFailureMessages());
+		}
 	}
 
 	public function signup()
