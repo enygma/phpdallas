@@ -5,7 +5,7 @@ class Controller_User extends Controller
 
 	public function __construct()
 	{
-		//nothing to see here...
+		parent::__construct();
 	}
 
 	public function index()
@@ -46,18 +46,24 @@ class Controller_User extends Controller
 		$this->useTemplate = false;
 		
 		if($this->filter->post('submit') && $valid->validate($posted)){
-			$user 	= new Model_User();
-			$result = $user->findSingleByUsername($this->filter->post('username'));
-
-			if($result!=null && md5($posted['password'])==$result['password']){
-				echo 'pass';
-				// set up the session and forward
+			
+			$auth = new Auth();
+			if($auth->login($this->filter->post())==true){
+				
+				$user = new Model_User();
+				$user = $user->findSingleByUsername($this->filter->post('username'));
+				
+				// Set up the session
+				Session::start(array(
+					'username' 	=> $user['username'],
+					'id' 		=> $user['ID']
+				));
 			}else{
-				echo 'fail';
+				$valid->setFailureMessage('login','Invalid login!');
+				return false;
 			}
-		}else{
-			$this->setViewData('validationErrors',$valid->getFailureMessages());
 		}
+		$this->setViewData('validationErrors',$valid->getFailureMessages());
 	}
 
 	public function signup()

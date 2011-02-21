@@ -6,10 +6,11 @@ class Controller_Index extends Controller
 	public function __controller()
 	{
 		//nothing to see...
+		parent::__construct();
 	}
 	
 	public function index()
-	{
+	{	
 		$db = new Database();
 		$meetingResult = $db->select('meetings',null,array('title'=>'test meeting'));
 
