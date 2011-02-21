@@ -52,6 +52,10 @@ class Validation
 	{
 		return $this->_failureMessages;
 	}
+	public function setFailureMessage($name,$message)
+	{
+		$this->_failureMessages[$name] = $message;
+	}
 
 	//------------------
 	private function _validateString($data)

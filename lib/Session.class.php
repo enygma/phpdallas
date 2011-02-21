@@ -2,30 +2,36 @@
 
 class Session
 {
+	static $_sessionKey = 'default';
 
 	public function __construct()
 	{
 		//nothing to see here
 	}
-
-	public function login($type='basic',$userData)
+	
+	public static function start($data)
 	{
-		$method = 'login'.ucwords(strtolower($type));
-		if(method_exists($method)){
-			return $this->$method($userData);
-		}else{
-			// see if we can find one in our dir
-			$class = 'Login'.ucwords(strtolower($type));
-			$login = new $class();
-			$login->login($userData);
+		foreach($data as $index => $value){
+			$_SESSION[self::$_sessionKey][strtoupper($index)] = $value;
 		}
 	}
-
-	//--------------------
-
-	public function loginBasic($userData)
+	public static function stop()
 	{
-		list($username,$password) = $userData;
+		unset($_SESSION[self::$_sessionKey]);
+	}
+	public static function isValid()
+	{
+		return (isset($_SESSION[self::$_sessionKey])) ? true : false;
+	}
+	public static function get($keyName=null)
+	{
+		if($keyName==null){
+			// return everything
+			return (isset($_SESSION[self::$_sessionKey])) ? $_SESSION[self::$_sessionKey] : null;
+		}else{
+			$keyName = strtoupper($keyName);
+			return (isset($_SESSION[self::$_sessionKey][$keyName])) ? $_SESSION[self::$_sessionKey][$keyName] : null;
+		}
 	}
 
 }
