@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 // set up an autoloader
 require_once('lib/Request.class.php');
