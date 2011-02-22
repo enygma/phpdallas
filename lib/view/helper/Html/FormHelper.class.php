@@ -57,7 +57,7 @@ class FormHelper extends Html
 	 *
 	 * @return string HTML input tag string
 	 */
-	private function input($type,$name,$value=null,$options=null)
+	private function input($type,$name,$value=null,$options=null,$label=null)
 	{
 		$default = array(
 			'type' => $type,
@@ -65,10 +65,12 @@ class FormHelper extends Html
 			'value'=> $value
 		);
 		 // merge the options if there are some
-                if($options){
-                        $default = array_merge($default,$options);
-                }
-                return '<input '.$this->_buildAttributes($default).'>';
+		if($options){
+			$default = array_merge($default,$options);
+		}
+		$html='<input '.$this->_buildAttributes($default).'>';
+		if($label){ $html.=' '.$label; }
+		return $html;
 	}
 	
 	public function select($name,$values,$options=null)
@@ -78,6 +80,15 @@ class FormHelper extends Html
 			$html .= '<option value="'.$index.'">'.$value.'</option>';
 		}
 		$html .= '</select>';
+		return $html;
+	}
+	
+	public function checkbox($name,$values,$options=null)
+	{
+		$html='';
+		foreach($values as $value => $label){
+			$html.=$this->input('checkbox',$name.'[]',$value,$options,$label).'<br/>';
+		}
 		return $html;
 	}
 

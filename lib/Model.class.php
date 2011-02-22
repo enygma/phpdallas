@@ -49,6 +49,13 @@ class Model
 
 	public function create()
 	{
+		// check to see if it's required to be unique
+		if($this->_unique==true){
+			if(count($this->find($values))>0){
+				throw new Exception('Unique constraint violated on "'.$this->_tableName.'" table.');
+			}
+		}
+		
 		$this->beforeCreate();
 		
 		// go through the columns list and match up the properties
@@ -56,12 +63,6 @@ class Model
 		foreach($this->_columns as $columnName => $columnDetail){
 			if(isset($this->$columnName)){
 				$values[$columnName] = $this->$columnName;
-			}
-		}
-		// check to see if it's required to be unique
-		if($this->_unique==true){
-			if(count($this->find($values))>0){
-				throw new Exception('Unique constraint violated on "'.$this->_tableName.'" table.');
 			}
 		}
 		
@@ -78,6 +79,15 @@ class Model
 
 	public function save()
 	{
+	}
+	
+	public function beforeCreate()
+	{
+		// placeholder
+	}
+	public function afterCreate()
+	{
+		// placeholder
 	}
 
 }
