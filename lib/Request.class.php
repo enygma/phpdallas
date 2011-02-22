@@ -5,6 +5,7 @@ class Request
 	private $_site_path 		= null;
 	private $_view_path 		= null;
 	private $_controller_path 	= null;
+	private $_site_name		= 'site';
 
 	public function __construct()
 	{
@@ -40,7 +41,7 @@ class Request
 		}
 		
 		// look through our directories
-		$directoryIterator = new RecursiveDirectoryIterator($this->_site_path);
+		$directoryIterator = new RecursiveDirectoryIterator($searchPath);
 		foreach(new RecursiveIteratorIterator($directoryIterator) as $file){
 			$currentPath = $file->getPath().'/'.$file->getFilename();
 			
@@ -58,9 +59,37 @@ class Request
 	 */
 	public function autoload($className)
 	{
-		$foundPath = $this->__findFile($className);
+		// first try to find it in the libs
+		$foundPath = $this->__findFile($className,$this->_site_path.'/lib');
+
+		// now try to find it in the site
+		if($foundPath==null){
+			// see if we have a subdomain
+			if($subdomain=$this->hasSubdomain()){
+				$this->_controller_path = $this->_site_path.'/'.$subdomain.'/controller';
+				$this->_view_path 	= $this->_site_path.'/'.$subdomain.'/view';
+				$path 			= $subdomain;
+			}
+			$foundPath = $this->__findFile($className,$this->_site_path.'/'.$path);
+		}
+
 		if(!empty($foundPath)){
 			require_once($foundPath);
+		}
+	}
+
+	/**
+	 * Check to see if we're on a subdomain or not
+	 *
+	 * @return mixed Either false for base domain or the subdomain if found
+	 */
+	private function hasSubdomain()
+	{
+		$domainParts = explode('.',$_SERVER['HTTP_HOST']);
+		if(count($domainParts)>2){
+			return $domainParts[0];
+		}else{
+			return false;
 		}
 	}
 

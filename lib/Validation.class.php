@@ -34,11 +34,11 @@ class Validation
 					$method = '_validate'.ucwords(strtoupper($rule));
 					if(method_exists($this,$method)){
 						$result = $this->$method($data);
-						if($result==false){
-							$this->_failureMessages[]=sprintf($this->_defaultFailureMsg,$fieldName);
+						if($result==false && !array_key_exists($fieldName,$this->_failureMessages)){
+							$this->_failureMessages[$fieldName]=sprintf($this->_defaultFailureMsg,$fieldName);
 						}
 					}else{
-						echo 'validation method for "'.$rule.'" does not exist';
+						throw new Exception('Validation method for "'.$rule.'" does not exist');
 					}
 				}	
 			}else{
