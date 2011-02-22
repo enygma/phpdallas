@@ -6,7 +6,7 @@
 
 <body>
 	<center>
-	<table cellpadding="3" cellspacing="0" border="0" width="400">
+	<table cellpadding="3" cellspacing="0" border="0" width="450">
 	<tr>
 		<td align="center"><img src="/assets/img/DallasPHP_Badge.png" /></td>
 	</tr>
