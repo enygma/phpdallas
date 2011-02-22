@@ -4,7 +4,7 @@
 <?php if($success): ?>
 
 <p>
-Thank you for your interest in the DallasPHP MiniCon confernece. We're working hard
+Thank you for your interest in the DallasPHP MiniCon conference. We're working hard
 to set up a great event for the entire web development community in the Dallas/Ft. Worth
 area.
 </p>
