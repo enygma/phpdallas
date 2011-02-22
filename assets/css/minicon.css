@@ -1,0 +1,10 @@
+body {
+
+	background-color: #2D2D2D;
+	font-family: verdana, arial, helvetica;
+	font-size: 11px;
+	color: #C3C3C3;
+}
+.error { 
+	color: #FF0000;
+}
