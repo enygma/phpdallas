@@ -5,7 +5,7 @@
 			There is a secondary meeting held each month on the following saturday, where members discuss any PHP topic raised and answer any questions asked. There are no dues or membership fees. Our membership is primarily made up of professional PHP developers, however, PHP users of all skill levels are welcome at all meetings.
 			</p> 
 			<p> 
-Please join our <a href="http://groups.google.com/dallasphp">Announcement List</a> or chat with us in our <a href="http://webchat.freenode.net/">IRC channel - #dallasphp</a>.
+Please join our <a href="http://groups.google.com/group/dallasphp">Announcement List</a> or chat with us in our <a href="http://webchat.freenode.net/">IRC channel - #dallasphp</a>.
 			<hr/> 
 			<h2>Previous Topics:</h2> 
 			<ul> 
