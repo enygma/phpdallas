@@ -69,6 +69,8 @@ class Request
 				$this->_controller_path = $this->_site_path.'/'.$subdomain.'/controller';
 				$this->_view_path 	= $this->_site_path.'/'.$subdomain.'/view';
 				$path 			= $subdomain;
+			}else{
+				$path = 'site';
 			}
 			$foundPath = $this->__findFile($className,$this->_site_path.'/'.$path);
 		}

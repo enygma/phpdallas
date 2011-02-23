@@ -77,7 +77,7 @@ class FormHelper extends Html
 	{
 		$html = '<select name="'.$name.'">';
 		foreach($values as $index => $value){
-			$html .= '<option value="'.$index.'">'.$value.'</option>';
+			$html .= '<option value="'.$value.'">'.$value.'</option>';
 		}
 		$html .= '</select>';
 		return $html;
@@ -152,7 +152,15 @@ class FormHelper extends Html
 		return 
 			$this->select($name.'_mo',range(1,12)).
 			$this->select($name.'_day',range(1,31)).
-			$this->select($name.'_day',range(date('Y'),date('Y')+10));
+			$this->select($name.'_yr',range(date('Y'),date('Y')+10));
+	}
+	
+	public function multiTimeSelect($name,$hr=null,$min=null,$sec=null)
+	{
+		return
+			$this->select($name.'_hr',range(0,23)).
+			$this->select($name.'_min',range(0,59)).
+			$this->select($name.'_sec',range(0,59));
 	}
 }
 

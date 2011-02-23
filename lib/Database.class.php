@@ -51,7 +51,7 @@ class Database
 	 *
 	 * @return array $result Fetched results
 	 */
-	public function select($table,$columns=null,$where=null)
+	public function select($table,$columns=null,$where=null,$orderBy=null)
 	{
 		$db 		= $this->connect();
 		$columns 	= ($columns===null) ? array('*') : $columns;
@@ -65,6 +65,9 @@ class Database
 				$prepare[':'.$column] = $value;
 			}
 			$sql.=' where '.join(' and ',$where_sql);
+		}
+		if($orderBy!=null){
+			$sql.=' order by '.$orderBy;
 		}
 		
 		// prepare the statement
