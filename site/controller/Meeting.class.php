@@ -10,7 +10,8 @@ class Controller_Meeting extends Controller
 
 	public function index()
 	{
-		
+		$db = new Database();
+		$this->setViewData('meetings',$db->select('meetings',null,null,'meeting_date desc'));
 	}
 
 	public function add()
@@ -25,22 +26,27 @@ class Controller_Meeting extends Controller
 			'meetup_date' => 'required'
 		));
 		
-		if($this->filter->post('sub') && $valid->validate($this->filter->post())){
-			// success
-			/*$meeting_date = mktime(
-				0,0,0,
-				$this->filter->post('meetup_name'),
-				$this->filter->post('meetup_name'),
-				$this->filter->post('meetup_name')
-			);*/
+		if($this->filter->post('submit') && $valid->validate($this->filter->post())){
+			
+			$meeting_date = mktime(
+				$this->filter->post('meetup_time_hr'),
+				$this->filter->post('meetup_time_min'),
+				$this->filter->post('meetup_time_sec'),
+				$this->filter->post('meetup_date_mo'),
+				$this->filter->post('meetup_date_day'),
+				$this->filter->post('meetup_date_yr')
+			);
 			
 			$db = new Database();
 			$db->insert('meetings',array(
 				'title' 		=> $this->filter->post('meetup_name'),
 				'detail'		=> $this->filter->post('meetup_desc'),
+				'speaker'		=> $this->filter->post('meetup_speaker'),
 				'meeting_date' 	=> $meeting_date,
-				'meeup_link' 	=> $this->filter->post('meetup_link'),
+				'meetup_link' 	=> $this->filter->post('meetup_link'),
 			));
+		}else{
+			echo 'fail';
 		}
 	}
 
