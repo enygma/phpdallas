@@ -4,7 +4,7 @@ class Model_Response extends Model
 {
 
 	protected $_tableName 	= 'response';
-	protected $_unique		= true;
+	//protected $_unique		= true;
 
 	public $_columns = array(
 		'email_address' => array('type'=>'string','length'=>100),

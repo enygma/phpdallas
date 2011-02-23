@@ -44,7 +44,8 @@ if(!empty($errors)){
 	<?php echo $this->html->form->checkbox('involvement',array(
 		'speak' 	=> "I'd like to speak at the event",
 		'volunteer' => "I'd like to volunteer to help at the event",
-		'planning'	=> "I'd like to help with the event planning"
+		'planning'	=> "I'd like to help with the event planning",
+		'sponsor'	=> "I'd like more information on sponsoring the event"
 	)); ?>
 	</td>
 </tr>
@@ -57,4 +58,9 @@ echo $this->html->form->close();
 endif;
 ?>
 
-<span style="font-size:9px;">brought to you by DallasPHP</span></center>
+<span style="font-size:10px;">
+brought to you by DallasPHP :: <a href="mailto:info@phpdallas.org">info@phpdallas.org</a><br/><br/>
+join us in <b>#dallasphp</b> on the <a href="http://freenode.net">freenode</a> IRC network - <a href="http://webchat.freenode.net/?channels=dallasphp">webchat</a>!
+</span>
+
+</center>
