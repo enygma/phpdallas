@@ -45,3 +45,7 @@ span.validationErrors {
 	color: #000000;
 	font-family: verdana, arial, helvetica;
 }
+.error { 
+	color: #FF0000;
+	font-size: 12px;
+}
