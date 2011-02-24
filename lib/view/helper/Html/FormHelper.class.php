@@ -113,6 +113,11 @@ class FormHelper extends Html
 		return $this->input('password',$name,$value,$options);
 	}
 	
+	public function hidden($name,$value=null,$options=null)
+	{
+		return $this->input('hidden',$name,$value,$options);
+	}
+	
 	/**
          * Generate input type="submit" tag
          *
