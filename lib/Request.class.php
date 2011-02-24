@@ -103,11 +103,11 @@ class Request
 		$parseUri = $this->parseUri();
 		Configure::setConfigValue('parseUri',$parseUri);
 	
-		$action = (!isset($parseUri[0]) || empty($parseUri[0])) ? 'index' : $parseUri[0];
-		$method = (!isset($parseUri[1]) || empty($parseUri[1])) ? 'index' : $parseUri[1];
+		$parseUri[0] = (!isset($parseUri[0]) || empty($parseUri[0])) ? 'index' : $parseUri[0];
+		$parseUri[1] = (!isset($parseUri[1]) || empty($parseUri[1])) ? 'index' : $parseUri[1];
 
-		if(empty($action)){ $action = 'index'; }
-		if(empty($method)){ $method = 'index'; }
+		$action = array_shift($parseUri);
+		$method = array_shift($parseUri);	
 
 		// load the class
 		$class = 'Controller_'.ucwords(strtolower($action));
@@ -118,7 +118,8 @@ class Request
                 $requestObject->filter->importGet();
                 $requestObject->filter->importPost();
 
-		$requestObject->$method();
+		//$requestObject->$method();
+		call_user_func_array(array($requestObject,$method),$parseUri);
 		
 		// output to our view
 		$viewFile = $this->_view_path.'/'.$action.'/'.$method.'.php';
