@@ -1,11 +1,11 @@
 <h2>Schedule</h2>
 
-<table cellpadding="5" cellspacing="0" border="0" id="scheduleTable">
-<tr>
+<table cellpadding="5" cellspacing="5" border="0" id="scheduleTable">
+<tr class="row-on">
 	<td class="time">8am - 8:50am</td>
 	<td>Registration</td>
 </tr>
-<tr>
+<tr class="row-off">
 	<td class="time">9am - 9:50am</td>
 	<td>Session #1</td>
 </tr>

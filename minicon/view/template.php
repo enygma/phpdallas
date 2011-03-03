@@ -8,7 +8,11 @@
 	<center>
 	<table cellpadding="5" cellspacing="0" border="0" id="layoutTable">
 	<tr>
-		<td valign="top" align="center" width="150"><br/><a href="/"><img src="/assets/img/DallasPHP_Badge.png" border="0" /></a></td>
+		<td valign="top" align="center" width="150"><br/>
+			<a href="/"><img src="/assets/img/DallasPHP_Badge.png" border="0" /></a>
+			<br/><br/>
+			<a href="http://twitter.com/dallasphp">Follow @dallasphp<br/>on Twitter</a>
+		</td>
 		<td valign="top">
 		<table cellpadding="5" cellspacing="0" border="0" width="100%">
 		<tr class="navBar">

@@ -40,12 +40,17 @@ a.navLink {
 	background-color: #FFFFFF;
 }
 #scheduleTable {
-	width: 400px;
+	width: 100%;
+}
+#scheduleTable tr.row-on {
+	background-color: #EEEEEE;
+}
+#scheduleTable tr.row-off {
+	background-color: #FFFFFF;
 }
 #scheduleTable td {
 	border: 1px solid #000000;
 }
 #scheduleTable td.time {
-	background-color: #FFFFFF;
 	color: #001F6A;
 }
