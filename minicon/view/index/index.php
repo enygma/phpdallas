@@ -1,5 +1,5 @@
 
-<h2 style="margin-bottom:2px;text-align:center">Dallas MiniCon</h2>
+<h2 style="margin-bottom:2px;">Dallas MiniCon</h2>
 
 <?php if($success): ?>
 
@@ -20,7 +20,6 @@ Interested in finding out more about the upcoming Dallas MiniCon PHP conference?
 <p>
 Enter your email address below and we'll send you the latest as news becomes available!
 </p>
-<center>
 <?php
 if(!empty($errors)){
 	echo '<span class="error">Error! Invalid ';
@@ -62,5 +61,3 @@ endif;
 brought to you by DallasPHP :: <a href="mailto:info@phpdallas.org">info@phpdallas.org</a><br/><br/>
 join us in <b>#dallasphp</b> on the <a href="http://freenode.net">freenode</a> IRC network - <a href="http://webchat.freenode.net/?channels=dallasphp">webchat</a>!
 </span>
-
-</center>
