@@ -56,6 +56,8 @@ class Filter
 
 	private function _filterInteger($data)
 	{
+		if(!preg_match('/[0-9]+/',$data)){ return false; }else{ $data = abs($data); }
+		return (filter_var($data,FILTER_VALIDATE_INT)==false) ? false : true;
 	}
 
 	private function _filterUrl($data)
