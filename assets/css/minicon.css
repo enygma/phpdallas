@@ -1,14 +1,51 @@
 body {
 
-	background-color: #2D2D2D;
-	font-family: verdana, arial, helvetica;
+	background-color: #B1861F;
+	background-repeat: repeat;
+	background-image:url('/assets/img/brown_grunge-bg.jpg');
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
 	font-size: 11px;
-	color: #C3C3C3;
+	color: #040300;
+	margin: 0px;
+	padding: 0px;
 }
 .error { 
 	color: #FF0000;
 	font-size: 12px;
 }
 a {
-	color: #C3C3C3;
+	color: #6A4B00;
+}
+h2 {
+	background-color: #92793E;
+	color: #FFE29E;
+	padding-left: 5px;
+}
+tr.navBar {
+	background-color: #001F6A;
+}
+td.navLinkCell {
+	text-align: center;
+}
+a.navLink {
+	color: #6A4B00;
+	font-weight: bold;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+#layoutTable {
+	height: 100%;
+	width: 80%;
+}
+#layoutTable td {
+	background-color: #FFFFFF;
+}
+#scheduleTable {
+	width: 400px;
+}
+#scheduleTable td {
+	border: 1px solid #000000;
+}
+#scheduleTable td.time {
+	background-color: #FFFFFF;
+	color: #001F6A;
 }
