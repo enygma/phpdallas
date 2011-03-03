@@ -81,19 +81,33 @@ class Controller_Meeting extends Controller
 			'full_name'	=> 'required',
 			'email'		=> 'required|email'
 		));
+
 		if($this->filter->post('submit') && $valid->validate($posted)){
-			$db = new Database();
-			$db->insert('badge_signup',array(
-				'full_name'		=> $this->filter->post('full_name'),
-				'email'			=> $this->filter->post('email'),
-				'meeting_date'	=> mktime(
-					0,0,0,
-					$this->filter->post('meeting_mo'),
-					1,
-					$this->filter->post('meeting_yr')
-				)
-			));
-			$this->setViewData('valid',true);
+
+			$pass = true;
+			// ensure the dates are still numeric
+			if(!$this->filter->filter($this->filter->post('meeting_mo'),'integer')){
+				$valid->setFailureMessage('meeting_mo','Invalid month!');
+				$pass = false;
+			}
+			if(!$this->filter->filter($this->filter->post('meeting_yr'),'integer')){
+                                $valid->setFailureMessage('meeting_yr','Invalid year!');
+                                $pass = false;
+                        }
+			if($pass){
+				$db = new Database();
+				$db->insert('badge_signup',array(
+					'full_name'		=> $this->filter->post('full_name'),
+					'email'			=> $this->filter->post('email'),
+					'meeting_date'	=> mktime(
+						0,0,0,
+						$this->filter->post('meeting_mo'),
+						1,
+						$this->filter->post('meeting_yr')
+					)
+				));
+				$this->setViewData('valid',true);
+			}
 		}
 		$this->setViewData('failureMsg',$valid->getFailureMessages());
 		$this->setViewData('dateString',mktime(0,0,0,$mo,1,$yr));
