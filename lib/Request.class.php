@@ -69,6 +69,10 @@ class Request
 				$this->_controller_path = $this->_site_path.'/'.$subdomain.'/controller';
 				$this->_view_path 	= $this->_site_path.'/'.$subdomain.'/view';
 				$path 			= $subdomain;
+			}elseif($domainMatch = $this->hasDomainMatch()){
+				$this->_controller_path = $this->_site_path.'/'.$domainMatch.'/controller';
+                                $this->_view_path       = $this->_site_path.'/'.$domainMatch.'/view';
+				$path 			= $domainMatch;
 			}else{
 				$path = 'site';
 			}
@@ -78,6 +82,23 @@ class Request
 		if(!empty($foundPath)){
 			require_once($foundPath);
 		}
+	}
+	
+	/**
+	 * Check in the "domains.txt" file to see if there's a match
+	 */
+	private function hasDomainMatch()
+	{
+		$domain 	= $_SERVER['HTTP_HOST'];	
+		$domainsList 	= file($_SERVER['DOCUMENT_ROOT'].'/domains.txt');
+
+		foreach($domainsList as $domainMap){
+			if(strpos($domainMap,$domain.'|')!==false){
+				$mapParts = explode('|',$domainMap);
+				return trim($mapParts[1]);
+			}
+		}
+		return false;	
 	}
 
 	/**
@@ -102,7 +123,7 @@ class Request
 
 		$parseUri = $this->parseUri();
 		Configure::setConfigValue('parseUri',$parseUri);
-	
+
 		$parseUri[0] = (!isset($parseUri[0]) || empty($parseUri[0])) ? 'index' : $parseUri[0];
 		$parseUri[1] = (!isset($parseUri[1]) || empty($parseUri[1])) ? 'index' : $parseUri[1];
 
