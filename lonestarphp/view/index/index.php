@@ -49,7 +49,7 @@ $this->html->form->close();
 <p>
 <b>Where:</b><br/> Plano Civic Center, Plano Tx
 <br/><br/>
-<b>When:</b><br/> Saturday, June 14th from 8am - 5pm
+<b>When:</b><br/> Saturday, June 11th from 8am - 5pm
 </br><br/>
 <b>Price:</b><br/> $50 for the full day (<a href="/register">more</a>)
 <br/><br/>
