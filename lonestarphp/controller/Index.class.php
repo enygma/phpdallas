@@ -9,6 +9,8 @@ class Controller_Index extends Controller
 
 	public function index()
 	{
+		$this->useTemplate = false;
+
 		$valid = new Validation();
 		$valid->setValidation(array(
 			'email' => 'required|email'
@@ -29,7 +31,10 @@ class Controller_Index extends Controller
 			$this->setViewData('err',$valid->getFailureMessages());
 		}
 	}
-
+	public function tmp()
+	{
+		$this->useTemplate = false;
+	}
 }
 
 ?>
