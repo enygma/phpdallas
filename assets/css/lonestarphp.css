@@ -1,103 +1,1055 @@
-body {
-	background-color: #EEEEEE;
-	margin: 0px;
-	padding: 0px;
-	font-family: verdana;
-	font-size: 13px;
-}
-td {
-	font-size: 12px;
-}
-.output-err {
-	color: #FF0000;
-}
-.output-msg {
-	border: 1px solid #CCCCCC;
-	padding: 5px;
-	color: #0F8F0F;
-	background-color: #EEEEEE;
-	font-weight: bold;
-}
-#layout {
-	width: 700px;
-	height: 98%;
-	background-color: #FFFFFF;
-	border-right: 1px solid #C8C8C8;
-	border-left: 1px solid #C8C8C8;
-}
-#footer {
-	width: 100%;
-	background-color: #A36048;
-	border-top: 1px solid #301B15;
-	color: #F6DFCA;
-	padding: 3px;
+/* 
+  HTML5 Boilerplate REVISED
+  
+  style.css contains a reset, font normalization and some base styles.
+  
+  credit is left where credit is due.
+  additionally, much inspiration was taken from these projects:
+    yui.yahooapis.com/2.8.1/build/base/base.css
+    camendesign.com/design/
+    praegnanz.de/weblog/htmlcssjs-kickstart
+*/
+
+/* @group reset.css
+----------------------------------------------------------------------------------------------------
+
+  html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+  html5doctor.com/html-5-reset-stylesheet/
+  
+----------------------------------------------------------------------------------------------------*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header, 
+hgroup, menu, nav, section, menu,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+
+article, aside, figure, footer, header, 
+hgroup, nav, section { display:block; }
+
+nav ul { list-style:none; }
+
+blockquote, q { quotes:none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+
+a { margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; background:transparent; }
+
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom:1px dotted #000; cursor:help; }
+
+/* tables still need cellspacing="0" in the markup */
+table { border-collapse:collapse; border-spacing:0; }
+
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+
+input, select { vertical-align:middle; }
+/* @end reset.css */
+
+
+
+/*  @group 960.css
+----------------------------------------------------------------------------------------------------
+
+    *960 Grid System ~ Core CSS.
+    *Learn more ~ http://960.gs/
+    *Licensed under GPL and MIT.
+
+----------------------------------------------------------------------------------------------------*/
+
+/* `Container >> 24 Columns
+----------------------------------------------------------------------------------------------------*/
+.container_24 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
 }
 
-.main-title {
-	font-weight: bold;
-	font-size: 38px;
-	font-family: Georgia;
+/* `Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16,
+.grid_17,
+.grid_18,
+.grid_19,
+.grid_20,
+.grid_21,
+.grid_22,
+.grid_23,
+.grid_24 {
+	display: inline;
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
-.clear { clear: both; }
-
-#centeredmenu {
-   float:left;
-   width:100%;
-   background:#fff;
-   border-bottom:4px solid #A36048;
-   overflow:hidden;
-   position:relative;
-   margin-top: 5px;
-}
-#centeredmenu ul {
-   clear:left;
-   float:left;
-   list-style:none;
-   margin:0;
-   padding:0;
-   position:relative;
-   left:50%;
-   text-align:center;
-}
-#centeredmenu ul li {
-   display:block;
-   float:left;
-   list-style:none;
-   margin:0 5 0 5;
-   padding:0;
-   position:relative;
-   right:50%;
-}
-#centeredmenu ul li a {
-   display:block;
-   margin:0 0 0 1px;
-   padding:3px 10px;
-   background:#A36048;
-   color:#F6DFCA;
-   text-decoration:none;
-   line-height:1.3em;
-}
-#centeredmenu ul li a:hover {
-   background:#474446;
-   color:#fff;
-}
-#centeredmenu ul li a.active,
-#centeredmenu ul li a.active:hover {
-   color:#fff;
-   background:#000;
-   font-weight:bold;
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3,
+.push_4, .pull_4,
+.push_5, .pull_5,
+.push_6, .pull_6,
+.push_7, .pull_7,
+.push_8, .pull_8,
+.push_9, .pull_9,
+.push_10, .pull_10,
+.push_11, .pull_11,
+.push_12, .pull_12,
+.push_13, .pull_13,
+.push_14, .pull_14,
+.push_15, .pull_15,
+.push_16, .pull_16,
+.push_17, .pull_17,
+.push_18, .pull_18,
+.push_19, .pull_19,
+.push_20, .pull_20,
+.push_21, .pull_21,
+.push_22, .pull_22,
+.push_23, .pull_23 {
+	position: relative;
 }
 
-#content {
-	text-align: left;
-	padding: 10 10 0 10;
+/* `Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+	margin-left: 0;
 }
 
-h2.section-header {
-	font-size: 18px;
-	color: #A36048;
+.omega {
+	margin-right: 0;
 }
-h2.section-header span.stub {
-	color: #301B15;
+
+/* `Grid >> 24 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_24 .grid_1 {
+	width: 30px;
+}
+
+.container_24 .grid_2 {
+	width: 70px;
+}
+
+.container_24 .grid_3 {
+	width: 110px;
+}
+
+.container_24 .grid_4 {
+	width: 150px;
+}
+
+.container_24 .grid_5 {
+	width: 190px;
+}
+
+.container_24 .grid_6 {
+	width: 230px;
+}
+
+.container_24 .grid_7 {
+	width: 270px;
+}
+
+.container_24 .grid_8 {
+	width: 310px;
+}
+
+.container_24 .grid_9 {
+	width: 350px;
+}
+
+.container_24 .grid_10 {
+	width: 390px;
+}
+
+.container_24 .grid_11 {
+	width: 430px;
+}
+
+.container_24 .grid_12 {
+	width: 470px;
+}
+
+.container_24 .grid_13 {
+	width: 510px;
+}
+
+.container_24 .grid_14 {
+	width: 550px;
+}
+
+.container_24 .grid_15 {
+	width: 590px;
+}
+
+.container_24 .grid_16 {
+	width: 630px;
+}
+
+.container_24 .grid_17 {
+	width: 670px;
+}
+
+.container_24 .grid_18 {
+	width: 710px;
+}
+
+.container_24 .grid_19 {
+	width: 750px;
+}
+
+.container_24 .grid_20 {
+	width: 790px;
+}
+
+.container_24 .grid_21 {
+	width: 830px;
+}
+
+.container_24 .grid_22 {
+	width: 870px;
+}
+
+.container_24 .grid_23 {
+	width: 910px;
+}
+
+.container_24 .grid_24 {
+	width: 950px;
+}
+
+/* `Prefix Extra Space >> 24 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_24 .prefix_1 {
+	padding-left: 40px;
+}
+
+.container_24 .prefix_2 {
+	padding-left: 80px;
+}
+
+.container_24 .prefix_3 {
+	padding-left: 120px;
+}
+
+.container_24 .prefix_4 {
+	padding-left: 160px;
+}
+
+.container_24 .prefix_5 {
+	padding-left: 200px;
+}
+
+.container_24 .prefix_6 {
+	padding-left: 240px;
+}
+
+.container_24 .prefix_7 {
+	padding-left: 280px;
+}
+
+.container_24 .prefix_8 {
+	padding-left: 320px;
+}
+
+.container_24 .prefix_9 {
+	padding-left: 360px;
+}
+
+.container_24 .prefix_10 {
+	padding-left: 400px;
+}
+
+.container_24 .prefix_11 {
+	padding-left: 440px;
+}
+
+.container_24 .prefix_12 {
+	padding-left: 480px;
+}
+
+.container_24 .prefix_13 {
+	padding-left: 520px;
+}
+
+.container_24 .prefix_14 {
+	padding-left: 560px;
+}
+
+.container_24 .prefix_15 {
+	padding-left: 600px;
+}
+
+.container_24 .prefix_16 {
+	padding-left: 640px;
+}
+
+.container_24 .prefix_17 {
+	padding-left: 680px;
+}
+
+.container_24 .prefix_18 {
+	padding-left: 720px;
+}
+
+.container_24 .prefix_19 {
+	padding-left: 760px;
+}
+
+.container_24 .prefix_20 {
+	padding-left: 800px;
+}
+
+.container_24 .prefix_21 {
+	padding-left: 840px;
+}
+
+.container_24 .prefix_22 {
+	padding-left: 880px;
+}
+
+.container_24 .prefix_23 {
+	padding-left: 920px;
+}
+
+/* `Suffix Extra Space >> 24 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_24 .suffix_1 {
+	padding-right: 40px;
+}
+
+.container_24 .suffix_2 {
+	padding-right: 80px;
+}
+
+.container_24 .suffix_3 {
+	padding-right: 120px;
+}
+
+.container_24 .suffix_4 {
+	padding-right: 160px;
+}
+
+.container_24 .suffix_5 {
+	padding-right: 200px;
+}
+
+.container_24 .suffix_6 {
+	padding-right: 240px;
+}
+
+.container_24 .suffix_7 {
+	padding-right: 280px;
+}
+
+.container_24 .suffix_8 {
+	padding-right: 320px;
+}
+
+.container_24 .suffix_9 {
+	padding-right: 360px;
+}
+
+.container_24 .suffix_10 {
+	padding-right: 400px;
+}
+
+.container_24 .suffix_11 {
+	padding-right: 440px;
+}
+
+.container_24 .suffix_12 {
+	padding-right: 480px;
+}
+
+.container_24 .suffix_13 {
+	padding-right: 520px;
+}
+
+.container_24 .suffix_14 {
+	padding-right: 560px;
+}
+
+.container_24 .suffix_15 {
+	padding-right: 600px;
+}
+
+.container_24 .suffix_16 {
+	padding-right: 640px;
+}
+
+.container_24 .suffix_17 {
+	padding-right: 680px;
+}
+
+.container_24 .suffix_18 {
+	padding-right: 720px;
+}
+
+.container_24 .suffix_19 {
+	padding-right: 760px;
+}
+
+.container_24 .suffix_20 {
+	padding-right: 800px;
+}
+
+.container_24 .suffix_21 {
+	padding-right: 840px;
+}
+
+.container_24 .suffix_22 {
+	padding-right: 880px;
+}
+
+.container_24 .suffix_23 {
+	padding-right: 920px;
+}
+
+/* `Push Space >> 24 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_24 .push_1 {
+	left: 40px;
+}
+
+.container_24 .push_2 {
+	left: 80px;
+}
+
+.container_24 .push_3 {
+	left: 120px;
+}
+
+.container_24 .push_4 {
+	left: 160px;
+}
+
+.container_24 .push_5 {
+	left: 200px;
+}
+
+.container_24 .push_6 {
+	left: 240px;
+}
+
+.container_24 .push_7 {
+	left: 280px;
+}
+
+.container_24 .push_8 {
+	left: 320px;
+}
+
+.container_24 .push_9 {
+	left: 360px;
+}
+
+.container_24 .push_10 {
+	left: 400px;
+}
+
+.container_24 .push_11 {
+	left: 440px;
+}
+
+.container_24 .push_12 {
+	left: 480px;
+}
+
+.container_24 .push_13 {
+	left: 520px;
+}
+
+.container_24 .push_14 {
+	left: 560px;
+}
+
+.container_24 .push_15 {
+	left: 600px;
+}
+
+.container_24 .push_16 {
+	left: 640px;
+}
+
+.container_24 .push_17 {
+	left: 680px;
+}
+
+.container_24 .push_18 {
+	left: 720px;
+}
+
+.container_24 .push_19 {
+	left: 760px;
+}
+
+.container_24 .push_20 {
+	left: 800px;
+}
+
+.container_24 .push_21 {
+	left: 840px;
+}
+
+.container_24 .push_22 {
+	left: 880px;
+}
+
+.container_24 .push_23 {
+	left: 920px;
+}
+
+/* `Pull Space >> 24 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_24 .pull_1 {
+	left: -40px;
+}
+
+.container_24 .pull_2 {
+	left: -80px;
+}
+
+.container_24 .pull_3 {
+	left: -120px;
+}
+
+.container_24 .pull_4 {
+	left: -160px;
+}
+
+.container_24 .pull_5 {
+	left: -200px;
+}
+
+.container_24 .pull_6 {
+	left: -240px;
+}
+
+.container_24 .pull_7 {
+	left: -280px;
+}
+
+.container_24 .pull_8 {
+	left: -320px;
+}
+
+.container_24 .pull_9 {
+	left: -360px;
+}
+
+.container_24 .pull_10 {
+	left: -400px;
+}
+
+.container_24 .pull_11 {
+	left: -440px;
+}
+
+.container_24 .pull_12 {
+	left: -480px;
+}
+
+.container_24 .pull_13 {
+	left: -520px;
+}
+
+.container_24 .pull_14 {
+	left: -560px;
+}
+
+.container_24 .pull_15 {
+	left: -600px;
+}
+
+.container_24 .pull_16 {
+	left: -640px;
+}
+
+.container_24 .pull_17 {
+	left: -680px;
+}
+
+.container_24 .pull_18 {
+	left: -720px;
+}
+
+.container_24 .pull_19 {
+	left: -760px;
+}
+
+.container_24 .pull_20 {
+	left: -800px;
+}
+
+.container_24 .pull_21 {
+	left: -840px;
+}
+
+.container_24 .pull_22 {
+	left: -880px;
+}
+
+.container_24 .pull_23 {
+	left: -920px;
+}
+
+
+/* `Clear Floated Elements
+-------------------------------------------------------------- */
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after {
+	content: '\0020';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*
+	The following zoom:1 rule is specifically for IE6 + IE7.
+	Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix {
+	zoom: 1;
+}
+/* @end 960.css */
+
+
+
+/* -------------------------------------------------------------------------------------------------
+
+   typography.css
+   * Sets up some sensible default typography.
+   * Based on Blueprint grid system
+   * http://www.blueprintcss.org/
+   * v0.9.1
+   
+----------------------------------------------------------------------------------------------------*/
+
+/* Default font settings. The font-size percentage is of 16px. (0.75 * 16px = 12px) */
+html { font-size:100.01%; overflow-y: scroll; /* always force a scrollbar in non-IE */ }
+body { font-size: 75%; color: #444; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; }
+
+
+/* Headings
+-------------------------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6 { font-weight: normal; color: #888; letter-spacing:-0.05em; }
+
+h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; color:#555; }
+h2 { font-size: 2em; margin-bottom: 0.75em; color:#777; }
+h3 { font-size: 1.5em; line-height: 1;margin-bottom: 0.75em; color:#999;  }
+h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 0.75em;  }
+h5 { font-size: 1em; font-weight: bold; margin-bottom: 0.75em;  }
+h6 { font-size: 1em; font-weight: bold; }
+
+h1 img, h2 img, h3 img,
+h4 img, h5 img, h6 img {
+  margin: 0;
+}
+
+
+/* Text elements
+-------------------------------------------------------------- */
+
+p		{ margin:0 0 1em; line-height:1.5em; }
+/* 	
+	These can be used to pull an image at the start of a paragraph, so 
+	that the text flows around it (usage: <p><img class="left">Text</p>) 
+ */
+.left,
+.image-align-left { float:left; margin:0 1.5em 1.5em 0; padding:0; } /*image-align-left is a refinery creation*/
+.right,
+.image-align-right { float:right; margin:0 0 1.5em 1.5em; } /*image-align-left is a refinery creation*/
+
+img.left,
+img.right { border:3px solid #fff; 
+		    -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+		    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+		    box-shadow: 0 1px 5px rgba(0,0,0,0.3); }	
+
+a           	{ color:#00aeef; text-decoration:none; }
+a:focus,
+a:hover     	{ color:#0072bc; text-decoration:underline; outline: none; }
+
+
+blockquote  	{ margin:1.5em; color:#666; font-style:italic; }
+strong,dfn	{ font-weight:bold; color:#005965; }
+em,dfn      	{ font-style:italic; }
+
+sub { vertical-align: sub; font-size: smaller; }
+sup { vertical-align: super; font-size: smaller; }
+
+abbr,
+acronym     	{ border-bottom: 1px dotted #666; }
+address     	{ margin: 0 0 1.5em; font-style: italic; }
+del         	{ color:#666; }
+
+pre         	{ margin: 1.5em 0; white-space: pre;
+		    /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
+		    white-space: pre; /* CSS2 */
+		    white-space: pre-wrap; /* CSS 2.1 */
+		    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+		    word-wrap: break-word; /* IE */ }
+pre,code,tt 	{ font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5; }
+
+
+/* Lists
+-------------------------------------------------------------- */
+
+/*li { line-height:1.1em; padding-bottom:.5em; }*/
+
+li ul,
+li ol       { margin: 0; }
+ul, ol      { margin: 0 0 1.5em 0; padding-left: 1.5em; }
+
+ul          { list-style-type: disc; }
+ol          { list-style-type: decimal; }
+
+dl          { margin: 0 0 1.5em 0; }
+dl dt       { font-weight: bold; }
+dd          { margin-left: 1.5em;}
+
+
+/* Tables
+-------------------------------------------------------------- */
+
+/* 
+	Because of the need for padding on TH and TD, the vertical rhythm 
+	on table cells has to be 27px, instead of the standard 18px or 36px 
+	of other elements. 
+ */ 
+table       	{ margin-bottom: 1.4em;  }
+th          	{ font-weight: bold; }
+thead th    	{ background: #c3d9ff; }
+th,td,caption 	{ padding: 4px 10px 4px 5px; }
+td, td img 	{ vertical-align: top; }
+/*
+	You can zebra-stripe your tables in outdated browsers by adding 
+	the class "even" to every other table row. 
+ */
+tbody tr:nth-child(even) td, 
+tbody tr.even td  { 
+/*	background: #f2f2f2; */
+}
+tfoot       { font-style: italic; }
+caption     { background: #eee; }
+
+
+/* Misc/Non-semantic Helper Classes
+-------------------------------------------------------------- */
+
+.small      { font-size: .8em; margin-bottom: 1.875em; line-height: 1.875em; }
+.large      { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
+.hide       { display: none; }
+
+.quiet      { color: #666; }
+.loud       { color: #000; }
+.highlight  { background:#ff0; }
+.added      { background:#060; color: #fff; }
+.removed    { background:#900; color: #fff; }
+
+.first      { margin-left:0; padding-left:0; }
+.last       { margin-right:0; padding-right:0; }
+.top        { margin-top:0; padding-top:0; }
+.bottom     { margin-bottom:0; padding-bottom:0; }
+
+/* for image replacement */
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+
+/* Hide for both screenreaders and browsers
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden { display: none; visibility: hidden; } 
+
+/* Hide only visually, but have it available for screenreaders 
+   www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden  */
+.visuallyhidden { position: absolute !important;    
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+
+
+
+/* -------------------------------------------------------------------------------------------------
+
+   forms.css
+   * Default form field styles.
+   
+----------------------------------------------------------------------------------------------------*/
+.input_group { margin-bottom:0px; padding:3px 0; clear:both; }
+    .input_group label { padding:2px 0;  width:7em; display:block; float:left;}
+    .input_group .note { display:block; padding:3px 0; margin-left:8em; font-size:.9em; color:#888; font-style:italic; }
+    
+    
+.input_group.block label { float:none; width:inherit; }
+.input_group.block input[type=text],
+.input_group.block select { width:75%; }
+.input_group.block .note { margin-left:0; }
+
+.input_group.checkbox label { float:none; width:inherit; display:inline; }
+
+.input_group.required label:after  { content:" * "; color:red; }
+
+
+input[type=text],
+input[type=search] { min-width:160px; padding:3px 5px; font-size:1em; border:1px solid #ccc; border-top-color:#666; border-left-color:#666;
+	-moz-border-radius:3px; -moz-border-radius:3px;
+	-webkit-border-radius:3px; -webkit-border-radius:3px;
+	border-radius:3px; border-radius:3px;
+	background-color:#f9f9f9;
+	background: -webkit-gradient(linear,left bottom,left top,color-stop(0.65, rgb(255,255,255)),color-stop(1, rgb(230,230,230)));
+	background: -moz-linear-gradient(center bottom,rgb(255,255,255) 65%,rgb(230,230,230) 100%); }
+textarea { overflow: auto; border:1px solid #ccc; border-top-color:#666; border-left-color:#666;
+	-moz-border-radius:3px; -moz-border-radius:3px;
+	-webkit-border-radius:3px; -webkit-border-radius:3px;
+	border-radius:3px; border-radius:3px;
+	background-color:#f9f9f9;
+	background: -webkit-gradient(linear,left bottom,left top,color-stop(0.65, rgb(255,255,255)),color-stop(1, rgb(230,230,230)));
+	background: -moz-linear-gradient(center bottom,rgb(255,255,255) 65%,rgb(230,230,230) 100%);} /* thnx ivannikolic! www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
+
+
+/* Formatting fixes */
+.ie6 legend, .ie7 legend { margin-left: -7px; } /* thnx ivannikolic! */
+
+/* align checkboxes, radios, text inputs with their label
+	by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css ; */
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+    .ie7 input[type="checkbox"] { vertical-align: baseline; }
+    .ie6 input { vertical-align: text-bottom; }
+
+/* hand cursor on clickable input elements */
+label,
+input[type=button],
+input[type=submit],
+button { cursor: pointer; }
+  
+/* webkit browsers add a 2px margin outside the chrome of form elements */ 
+button,
+input,
+select,
+textarea { margin: 0; }
+ 
+/* colors for form validity */
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid { border-radius: 1px;
+    -moz-box-shadow: 0px 0px 5px red;
+    -webkit-box-shadow: 0px 0px 5px red;
+    box-shadow: 0px 0px 5px red; }
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+
+/*
+    These selection declarations have to be separate.
+    No text-shadow: twitter.com/miketaylr/status/12228805301 
+    Also: hot pink.
+*/
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
+
+/*  j.mp/webkit-tap-highlight-color */
+a:link { -webkit-tap-highlight-color: #FF5E99; } 
+
+/* make buttons play nice in IE:    
+   www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
+button {  width: auto; overflow: visible; }
+ 
+/* bicubic resizing for non-native sized IMG: 
+   code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+
+
+
+
+
+
+/*  @group fonts.css
+----------------------------------------------------------------------------------------------------
+
+	*@font-face styles
+	
+----------------------------------------------------------------------------------------------------*/
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      exljbris
+ * License URL: http://www.fontspring.com/fflicense/exljbris
+ *
+ *
+ */
+
+@font-face {
+    font-family: 'MuseoSlab500';
+    src: url('/assets/fonts/Museo_Slab_500-webfont.eot?') format('eot'),
+         url('/assets/fonts/Museo_Slab_500-webfont.woff') format('woff'),
+         url('/assets/fonts/Museo_Slab_500-webfont.ttf') format('truetype'),
+         url('/assets/fonts/Museo_Slab_500-webfont.svg#webfontLEyovlXT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MuseoSlab500';
+    src: url('Museo_Slab_500italic-webfont.eot?') format('eot'),
+         url('Museo_Slab_500italic-webfont.woff') format('woff'),
+         url('Museo_Slab_500italic-webfont.ttf') format('truetype'),
+         url('Museo_Slab_500italic-webfont.svg#webfontEumo2ViS') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+/* @end fonts.css */
+
+
+/*  @group pages.css
+----------------------------------------------------------------------------------------------------
+
+    *Primary Page Styles
+
+----------------------------------------------------------------------------------------------------*/
+body { background-color:#f4f3e7; text-align:center; }
+header { margin-top:50px; margin-bottom:20px;}
+
+h1 { font-family: MuseoSlab500, Georgia, Times, serif; }
+h3 { color:#702216; }
+h4 { font-weight:bold; font-size:1.3em; }
+.flurish { width:190px; margin-bottom:10px;  margin-left:auto; margin-right:auto;  border-bottom:1px dotted #aaa;padding-bottom:10px;  font-size:2em;font-family: MuseoSlab500, Georgia, Times; text-transform:uppercase; background:url('/assets/img/lonestarphp/flurish-left.png') no-repeat 0 40%,  url('/assets/img/lonestarphp/flurish-right.png') no-repeat 100% 40%;;}
+
+#main { }
+	#main h1 { margin-bottom:40px; }
+	#register { font-size:2em; background: url('/assets/img/lonestarphp/register.png'); color:#fff; height:69px; width:405px; clear:both; line-height:69px; text-align:center; display:block; margin:0 auto;}
+
+
+
+/* @group media.css
+----------------------------------------------------------------------------------------------------
+
+ * Media queries for responsive design
+ * These follow after primary styles so they will successfully override. 
+  
+----------------------------------------------------------------------------------------------------*/
+
+@media all and (orientation:portrait) { 
+  /* Style adjustments for portrait mode goes here */
+  
+}
+
+@media all and (orientation:landscape) { 
+  /* Style adjustments for landscape mode goes here */
+  
+}
+
+/* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)  
+   Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {
+  
+  
+  /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
+     j.mp/textsizeadjust 
+  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+
+/* 
+ * print styles
+ * inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/ 
+ */
+@media print {
+  * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a:after { content: " (" attr(href) ")"; } 
+  abbr:after { content: " (" attr(title) ")"; }
+  .ir a:after { content: ""; }  /* Don't show links for images */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */ 
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
 }
