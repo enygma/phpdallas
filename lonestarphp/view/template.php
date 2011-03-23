@@ -40,6 +40,7 @@
 
 <div id="container" class="container_24" >
     <header>
+	test
 		<img src="/assets/img/lonestarphp/logo.png" />
     </header>
     
