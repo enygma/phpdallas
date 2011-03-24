@@ -46,8 +46,8 @@
 		</div>
 		
 		<div class="grid_15 prefix_1" style=" padding-top:20px; padding-bottom:20px;">
-			<h1>Introducing the first ever <br />PHP Conference in the state of Texas</h1>
-			<h2>Join us for this day-long event and hear the best local speakers from around Texas.</h2>
+			<h1>Introducing the first annual <br />PHP Conference in North Texas</h1>
+			<h2>Join us for this day-long event and hear the best local speakers from the Lone Star State.</h2>
 			
 			<hr />
 			
