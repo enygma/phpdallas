@@ -38,34 +38,184 @@
 
 <body>
 
-<div id="container" class="container_24" >
-    <header>
-	test
-		<img src="/assets/img/lonestarphp/logo.png" />
+<div id="container">
+    <header class="container_24">
+		<div class="grid_8 ">
+			<br /><br />
+			<img src="/assets/img/lonestarphp/logo.png" style="width:300px;" />
+		</div>
+		
+		<div class="grid_15 prefix_1" style=" padding-top:20px; padding-bottom:20px;">
+			<h1>Introducing the first ever <br />PHP Conference in the state of Texas</h1>
+			<h2>Join us for this day-long event and hear the best local speakers from around Texas.</h2>
+			
+			<hr />
+			
+			<div class="grid_5 alpha">
+				<h3>Where</h3>
+				
+			</div>
+			
+			<div class="grid_5">
+				<h3>When</h3>
+			</div>
+		
+			<div class="grid_5 omega">
+				<h3>How</h3>
+			</div>
+			<hr class="clear" />
+			<a href="" style="border:1px solid red; width:300px;display:block;margin:0 auto;line-height:35px;">Register</a>
+		</div>
     </header>
     
-    <div id="main" class="grid_14 prefix_5 suffix_5">
-		<!--<h1>Bringing quality PHP content to the Metroplex</h1>-->
-		<br/>
+    <div id="main" class="" style="clear:both; background:#222;">
+		<section class="container_24">
+			<h2>The Session Schedule</h2>
+			<table style="width:100%; text-align:left; color:#fff">
+				<thead>
+					<tr>
+						<th></th>
+						<th>Track 1</th>
+						<th>Track 2</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>8:00am</td>
+						<td rowspan="2" colspan="2" >Registration</td>
+					</tr>
+					<tr>
+						<td>8:30am</td>
+					</tr>
+					<tr>
+						<td>9:00am</td>
+						<td rowspan="2">
+							<h4>Do you Queue? <a href="">Kevin Schroeder, <i>Zend</i></a></h4>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						</td>
+						<td rowspan="3">
+							<h4>PHP-GTK <a href="">Bob Majdak, <i>Ardent.Com, Inc</i></a></h4>
+							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio.</p>
+						</td>
+					</tr>
+					<tr>
+						<td>9:30am</td>
+					</tr>
+					<tr>
+						<td>10:00am</td>
 
-		<div class="grid_6 prefix_1 alpha">
-			<h3 class="flurish">Where</h3>
-			<h4>Crown Plaza, Dallas, TX<br /><a href=""http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Crowne+Plaza+Suites+Dallas+Park+Central,+Alpha+Road,+Dallas,+TX&aq=0&sll=37.0625,-95.677068&sspn=49.444078,95.273438&ie=UTF8&hq=Crowne+Plaza+Suites+Dallas+Park+Central&hnear=Crowne+Plaza+Suites+Dallas+Park+Central,+7800+Alpha+Rd,+Dallas,+Texas+75240&ll=32.928301,-96.771741&spn=0.024891,0.04652&t=h&z=15">Map it</a></h4>
-		</div>
-
-		<div class="grid_6  omega">
-			<h3 class="flurish">When</h3>
-			<h4>Saturday, June 11, 2011</h4>
-		</div>
-
-		<div class="clear"></div><br /><br />
+						<td rowspan="2">
+							<h4>Unsung Heroes of PHP <a href="">Jake Smith, <i>Click Here</i></a></h4>
+							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+						</td>
+					</tr>
+					<tr>
+						<td>10:30am</td>
+						<td rowspan="3">
+							<h4>Using PHP and MySQL to Build Applications with Windows Azure <a href="">Chris Koenig, <i>Microsoft</i></a></h4>
+							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+						</td>
+					</tr>
+					<tr>
+						<td>11:00am</td>
+						<td rowspan="2">
+							<h4>Intermediate/Advanced Zend_Form <a href="">Daniel Cousineau</a></h4>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						</td>
+						
+					</tr>
+					<tr>
+						<td>11:30am</td>
+	
+					</tr>
+					<tr>
+						<td>12:00pm</td>
+						<td rowspan="3" colspan="2" >Lunch (Provided)</td>
+					</tr>
+					<tr>
+						<td>12:30pm</td>
+					</tr>
+					<tr>
+						<td>1:00pm</td>
+					</tr>
+					<tr>
+						<td>1:30pm</td>
+						<td rowspan="2">
+							<h4>Object Oriented Web Development - OOP PHP <a href="">Malvik Majithia, <i>Department of Research, The University of Texas at Dallas</i></a></h4>
+							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio.</p>
+						</td>
+						<td rowspan="2">
+							<h4>Using Dependency Injection for Proper Unit Testing <a href="">Vic Cherubini, <i>Leftnode Software, Inc.</i></a></h4>
+							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+						</td>
+					</tr>
+					<tr>
+						<td>2:00pm</td>
+					</tr>
+					<tr>
+						<td>2:30pm</td>
+						<td rowspan="2">
+							<h4>Why Developers Don't Matter <a href="">Joe Mills, <i>lifeBlue Media</i></a></h4>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						</td>
+						<td>
+							<h4>Why Developers Don't Matter <a href="">Joe Mills, <i>lifeBlue Media</i></a></h4>
+							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit.</p>
+						</td>
+					</tr>
+					<tr>
+						<td>3:00pm</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>3:30pm</td>
+						<td rowspan="2">
+							<h4>Why PHP Doesn't Matter <a href="">Travis Swicegood, <i>Texas Tribune</i></a></h4>
+							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl</p>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>4:00pm</td>
+						
+						<td></td>
+					</tr>
+					<tr>
+						<td>4:30pm</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>5:00pm</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>5:30pm</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>6:00pm</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>6:30pm</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>7:00pm</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+				
+		</section>
 		
-		<a href="http://lonestarphp.eventbrite.com" id="register">Register Now</a>
 	</div>
-
-	<div class="clear"></div><br /><br />
-    
-	<br /><br /><br />
     
 	<footer>
 
@@ -76,8 +226,8 @@
   <!-- Javascript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.1.js"%3E%3C/script%3E'))</script>
   
   
   <!-- scripts concatenated and minified via ant build script-->

@@ -1002,10 +1002,31 @@ h3 { color:#702216; }
 h4 { font-weight:bold; font-size:1.3em; }
 .flurish { width:190px; margin-bottom:10px;  margin-left:auto; margin-right:auto;  border-bottom:1px dotted #aaa;padding-bottom:10px;  font-size:2em;font-family: MuseoSlab500, Georgia, Times; text-transform:uppercase; background:url('/assets/img/lonestarphp/flurish-left.png') no-repeat 0 40%,  url('/assets/img/lonestarphp/flurish-right.png') no-repeat 100% 40%;;}
 
+
+
 #main { }
 	#main h1 { margin-bottom:40px; }
 	#register { font-size:2em; background: url('/assets/img/lonestarphp/register.png'); color:#fff; height:69px; width:405px; clear:both; line-height:69px; text-align:center; display:block; margin:0 auto;}
 
+
+table th { background:#292929; border-bottom:1px solid #333;padding:7px 12px; text-transform:uppercase; text-align:center; color:#666; }
+table th:first-child { background:#222;}
+table tr { height:30px;  }
+table tr:nth-child(2n-1) { background:#292929;}
+table tr:hover td { background:#333;  border-color:transparent;
+-webkit-transition: all 300ms cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+   -moz-transition: all 300ms cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+     -o-transition: all 300ms cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+        transition: all 300ms cubic-bezier(0.785, 0.135, 0.150, 0.860);}
+
+table td { width:43%; padding:12px; border-bottom:1px solid #333;border-left:1px solid #333; margin-bottom:-1px; background:#222; color:#aaa;}
+table td:first-child {width:100px;font-family:Courier; color:#999; border-color:transparent; background:inherit; }
+
+table tr:hover td:hover { color:#fff; }
+
+table h4 { font-size:1.2em; color:#fff; margin-bottom:.3em;}
+table h4 a { font-weight:normal; padding-left:5px;}
+table h4 a:before { content:"_";}
 
 
 /* @group media.css
