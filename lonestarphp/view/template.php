@@ -82,7 +82,7 @@
 				<tbody>
 					<tr>
 						<td>8:00am</td>
-						<td rowspan="2" colspan="2" >Registration</td>
+						<td rowspan="2" colspan="2" class="sessionBreak" >Registration</td>
 					</tr>
 					<tr>
 						<td>8:30am</td>
@@ -130,7 +130,7 @@
 					</tr>
 					<tr>
 						<td>12:00pm</td>
-						<td rowspan="3" colspan="2" >Lunch (Provided)</td>
+						<td rowspan="3" colspan="2" class="sessionBreak" >Lunch (Provided)</td>
 					</tr>
 					<tr>
 						<td>12:30pm</td>
@@ -203,7 +203,7 @@
 					</tr>
 					<tr>
 						<td>5:30pm</td>
-						<td rowspan="2" colspan="2" >Party</td>
+						<td rowspan="2" colspan="2" class="sessionBreak" >Party</td>
 					</tr>
 					<tr>
 						

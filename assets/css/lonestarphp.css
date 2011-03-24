@@ -1028,6 +1028,8 @@ table h4 { font-size:1.2em; color:#fff; margin-bottom:.3em;}
 table h4 a { font-weight:normal; padding-left:5px;}
 table h4 a:before { content:"_";}
 
+table .sessionBreak { text-align:center; font-size:1.5em; vertical-align:middle; color:#fff; }
+
 
 /* @group media.css
 ----------------------------------------------------------------------------------------------------
