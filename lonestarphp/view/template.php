@@ -159,13 +159,16 @@
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 						</td>
 						<td>
-							<h4>Why Developers Don't Matter <a href="">Joe Mills, <i>lifeBlue Media</i></a></h4>
+							<h4>Something Something Cloudy Cloud Cloud <a href="">Steve Iboubi, <i>SoftLayer</i></a></h4>
 							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit.</p>
 						</td>
 					</tr>
 					<tr>
 						<td>3:00pm</td>
-						<td></td>
+						<td rowspan="2">
+							<h4>Preparing LAMP for Production <a href="">Stephen Fierbaugh, <i>Pioneer Bible Translators</i></a></h4>
+							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio.</p>
+						</td>
 					</tr>
 					<tr>
 						<td>3:30pm</td>
@@ -173,45 +176,42 @@
 							<h4>Why PHP Doesn't Matter <a href="">Travis Swicegood, <i>Texas Tribune</i></a></h4>
 							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl</p>
 						</td>
-						<td></td>
+						
 					</tr>
 					<tr>
 						<td>4:00pm</td>
-						
-						<td></td>
+						<td>
+							<h4>Drupal <a href="">Chris Christensen, <i>AllPlayers.com</i></a></h4>
+							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit.</p>
+						</td>
+
 					</tr>
 					<tr>
 						<td>4:30pm</td>
-						<td></td>
-						<td></td>
+						<td rowspan="2">
+							<h4>Anecdotal Development and Deployment <a href="">Brian Blood, <i>MacServe</i></a></h4>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						</td>
+						<td rowspan="2">
+							<h4>Titanium for Mobile Development with PHP <a href="">Nicolas-Bryan: Wallace, <i>FyberStudios</i></a></h4>
+							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl</p>
+						</td>
 					</tr>
 					<tr>
 						<td>5:00pm</td>
-						<td></td>
-						<td></td>
+						
 					</tr>
 					<tr>
 						<td>5:30pm</td>
-						<td></td>
-						<td></td>
+						<td rowspan="2" colspan="2" >Party</td>
 					</tr>
 					<tr>
-						<td>6:00pm</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>6:30pm</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>7:00pm</td>
-						<td></td>
-						<td></td>
+						
+						
 					</tr>
 				</tbody>
 			</table>
+			<br /><br /><br />
 				
 		</section>
 		
