@@ -39,7 +39,7 @@
 <body>
 
 <div id="container">
-    <header class="container_24">
+    <header class="container_24 clearfix">
 		<div class="grid_8 ">
 			<br /><br />
 			<img src="/assets/img/lonestarphp/logo.png" style="width:300px;" />
@@ -48,29 +48,39 @@
 		<div class="grid_15 prefix_1" style=" padding-top:20px; padding-bottom:20px;">
 			<h1>Introducing the first annual <br />PHP Conference in North Texas</h1>
 			<h2>Join us for this day-long event and hear the best local speakers from the Lone Star State.</h2>
-			
+			<br />
 			<hr />
-			
+			<h2 style="background:#f4f3e7; width:220px; margin:0 auto;margin-top:-25px; margin-bottom:20px;font-family: Clarendon; font-weight:bold; text-transform:uppercase; line-height:20px; "><i style="color:#bbb; font-size:.9em; text-transform:lowercase;font-style:italic;font-weight:normal;">The</i> Essentials</h2>
 			<div class="grid_5 alpha">
-				<h3>Where</h3>
-				
+				<h3 style="font-family: Clarendon; font-weight:bold; text-transform:uppercase">Where</h3>
+				<p>Crowne Plaza<br />
+					123 Coit Rd, Dallas TX, 77777<br />
+					<a href="">Map it</a></p>
 			</div>
 			
 			<div class="grid_5">
-				<h3>When</h3>
+				<h3 style="font-family: Clarendon; font-weight:bold; text-transform:uppercase ">When</h3>
+				<p>Saturday<br />
+					June 11, 2011</p>
 			</div>
 		
 			<div class="grid_5 omega">
-				<h3>How</h3>
+				<h3 style="font-family: Clarendon; font-weight:bold; text-transform:uppercase ">How</h3>
+				<p>Register is only $60</p>
 			</div>
 			<hr class="clear" />
-			<a href="" style="border:1px solid red; width:300px;display:block;margin:0 auto;line-height:35px;">Register</a>
+			<a href="" style="background:#bd3926; width:300px;display:block;margin:0 auto;line-height:35px; color:#fff;">Register</a>
 		</div>
     </header>
     
-    <div id="main" class="" style="clear:both; background:#222;">
-		<section class="container_24">
-			<h2>The Session Schedule</h2>
+    <div id="main" class="" style="clear:both; background:#222; margin-top:20px;">
+		
+
+		<section >
+			<h2 style="background:#333; padding:10px; border-top:3px solid #702216; letter-spacing:inherit; border-bottom:3px solid #555; color:#fff;font-family: Clarendon; font-weight:bold; text-transform:uppercase; "><i style="color:#999; font-size:.9em; text-transform:lowercase;font-style:italic; font-weight:normal;">The</i> Session Schedule</h2>
+
+			<div class="container_24" style=";">
+
 			<table style="width:100%; text-align:left; color:#fff">
 				<thead>
 					<tr>
@@ -90,39 +100,43 @@
 					<tr>
 						<td>9:00am</td>
 						<td rowspan="2">
-							<h4>Do you Queue? <a href="">Kevin Schroeder, <i>Zend</i></a></h4>
+							<h4>Intermediate/Advanced Zend_Form <a href="">Daniel Cousineau</a></h4>
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 						</td>
-						<td rowspan="3">
-							<h4>PHP-GTK <a href="">Bob Majdak, <i>Ardent.Com, Inc</i></a></h4>
+						<td rowspan="2">
+							<h4>Preparing LAMP for Production <a href="">Stephen Fierbaugh, <i>Pioneer Bible Translators</i></a></h4>
 							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio.</p>
 						</td>
+						
 					</tr>
 					<tr>
 						<td>9:30am</td>
 					</tr>
 					<tr>
 						<td>10:00am</td>
-
 						<td rowspan="2">
-							<h4>Unsung Heroes of PHP <a href="">Jake Smith, <i>Click Here</i></a></h4>
-							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+							<h4>Framework Development and Benchmarking</h4>
+						</td>
+						<td rowspan="2">
+							<h4>Why Developers Don't Matter <a href="">Joe Mills, <i>lifeBlue Media</i></a></h4>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 						</td>
 					</tr>
 					<tr>
 						<td>10:30am</td>
-						<td rowspan="3">
-							<h4>Using PHP and MySQL to Build Applications with Windows Azure <a href="">Chris Koenig, <i>Microsoft</i></a></h4>
-							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
-						</td>
 					</tr>
 					<tr>
 						<td>11:00am</td>
 						<td rowspan="2">
-							<h4>Intermediate/Advanced Zend_Form <a href="">Daniel Cousineau</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+							<h4>Unsung Heroes of PHP <a href="">Jake Smith, <i>Click Here</i></a></h4>
+							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+						</td>
+						<td rowspan="2">
+							<h4>Object Oriented Web Development - OOP PHP <a href="">Malvik Majithia, <i>Department of Research, The University of Texas at Dallas</i></a></h4>
+							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio.</p>
 						</td>
 						
+
 					</tr>
 					<tr>
 						<td>11:30am</td>
@@ -141,13 +155,14 @@
 					<tr>
 						<td>1:30pm</td>
 						<td rowspan="2">
-							<h4>Object Oriented Web Development - OOP PHP <a href="">Malvik Majithia, <i>Department of Research, The University of Texas at Dallas</i></a></h4>
-							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio.</p>
+							<h4>Anecdotal Development and Deployment <a href="">Brian Blood, <i>MacServe</i></a></h4>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 						</td>
 						<td rowspan="2">
-							<h4>Using Dependency Injection for Proper Unit Testing <a href="">Vic Cherubini, <i>Leftnode Software, Inc.</i></a></h4>
-							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+							<h4>Drupal <a href="">Chris Christensen, <i>AllPlayers.com</i></a></h4>
+							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit.</p>
 						</td>
+						
 					</tr>
 					<tr>
 						<td>2:00pm</td>
@@ -155,47 +170,52 @@
 					<tr>
 						<td>2:30pm</td>
 						<td rowspan="2">
-							<h4>Why Developers Don't Matter <a href="">Joe Mills, <i>lifeBlue Media</i></a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+							<h4>Scaling Your Application</h4>
 						</td>
-						<td>
-							<h4>Something Something Cloudy Cloud Cloud <a href="">Steve Iboubi, <i>SoftLayer</i></a></h4>
-							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit.</p>
-						</td>
-					</tr>
-					<tr>
-						<td>3:00pm</td>
 						<td rowspan="2">
-							<h4>Preparing LAMP for Production <a href="">Stephen Fierbaugh, <i>Pioneer Bible Translators</i></a></h4>
-							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio.</p>
-						</td>
-					</tr>
-					<tr>
-						<td>3:30pm</td>
-						<td rowspan="2">
-							<h4>Why PHP Doesn't Matter <a href="">Travis Swicegood, <i>Texas Tribune</i></a></h4>
-							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl</p>
+							<h4>Using PHP and MySQL to Build Applications with Windows Azure <a href="">Chris Koenig, <i>Microsoft</i></a></h4>
+							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
 						</td>
 						
 					</tr>
 					<tr>
-						<td>4:00pm</td>
-						<td>
-							<h4>Drupal <a href="">Chris Christensen, <i>AllPlayers.com</i></a></h4>
-							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit.</p>
+						<td>3:00pm</td>
+
+					</tr>
+					<tr>
+						<td>3:30pm</td>
+						<td rowspan="2">
+							<h4>Titanium for Mobile Development with PHP <a href="">Nicolas-Bryan: Wallace, <i>FyberStudios</i></a></h4>
+							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl</p>
 						</td>
+						<td rowspan="2">
+							<h4>Do you Queue? <a href="">Kevin Schroeder, <i>Zend</i></a></h4>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						</td>
+						
+						
+
+						
+
+						
+					</tr>
+					<tr>
+						<td>4:00pm</td>
+
 
 					</tr>
 					<tr>
 						<td>4:30pm</td>
 						<td rowspan="2">
-							<h4>Anecdotal Development and Deployment <a href="">Brian Blood, <i>MacServe</i></a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+							<h4>Using Dependency Injection for Proper Unit Testing <a href="">Vic Cherubini, <i>Leftnode Software, Inc.</i></a></h4>
+							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
 						</td>
+						
 						<td rowspan="2">
-							<h4>Titanium for Mobile Development with PHP <a href="">Nicolas-Bryan: Wallace, <i>FyberStudios</i></a></h4>
-							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl</p>
+							<h4>PHP-GTK <a href="">Bob Majdak, <i>Ardent.Com, Inc</i></a></h4>
+							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio.</p>
 						</td>
+
 					</tr>
 					<tr>
 						<td>5:00pm</td>
@@ -209,17 +229,46 @@
 						
 						
 					</tr>
+					
+					
+					<!--td rowspan="2">
+						<h4>Why PHP Doesn't Matter <a href="">Travis Swicegood, <i>Texas Tribune</i></a></h4>
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl</p>
+					</td-->
+					<!--td rowspan="2">
+						<h4>Something Something Cloudy Cloud Cloud <a href="">Steve Iboubi, <i>SoftLayer</i></a></h4>
+						<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit.</p>
+					</td-->
 				</tbody>
 			</table>
-			<br /><br /><br />
-			<a href="http://www.w3.org/html/logo/">
-				<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
-			</a>
+			</div>
 		</section>
+		
+		<section>
+			<div class="container_24">
+				<h2 style="background:#333; padding:10px; margin-bottom:20px;">The Speakers</h2>
+				
+			</div>
+		</section>
+		
+		<section class="container_24">
+			<section class="grid_11" style="text-align:left;">
+				<h2>About The Lone Star PHP Conference</h2>
+				<p>thois isldkjf kk jslkdf pwef kjslkdfj klsjdvlk sldfkj sdf oisdf kljs dfoij lksjdfoiu lkkjsdfuo jkjsdfjsl kjdfl lskjhdfkj lksjhdflkjlk sjdflj lskjfd lkjs ldfkj sldkfj slkdjflkjslkdfjl jsldkfj skkdflM</p>
+			</section>
+
+			<section class="grid_11">
+				<h2>Location</h2>
+			</section>
+		</section>
+
 	</div>
     
 	<footer>
-
+		<br /><br /><br />
+		<a href="http://www.w3.org/html/logo/">
+			<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+		</a>
     </footer>
 </div> <!--! end of #container -->
 
