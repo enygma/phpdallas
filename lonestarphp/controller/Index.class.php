@@ -33,7 +33,15 @@ class Controller_Index extends Controller
 	}
 	public function tmp()
 	{
-		$this->useTemplate = false;
+
+		$eventData = simplexml_load_file($_SERVER['DOCUMENT_ROOT'].'/assets/xml/lonestarphp-sessions.xml');
+
+                $view = new View();
+                $this->setViewData(array(
+                        'schedule_block' => $view->generate(array('eventDetail'=>$eventData),'index/schedule_block'),
+			'speaker_block' => $view->generate(array('eventDetail'=>$eventData),'index/speaker_block')
+                ));
+		$this->useTemplate = true;
 	}
 }
 
