@@ -36,24 +36,25 @@
 
 </head>
 
-<body>
+<body style="border-top:5px solid #222;">
 
 <div id="container">
     <header class="container_24 clearfix">
 		<!--nav>
 			<ul>
-				<li class="active"><a href="#">home</a></li>
-				<li><a href="#">portfolio</a></li>
-				<li><a href="#">blog</a></li>
-				<li><a href="#">contact</a></li>
+				<li class="active"><a href="#">Speakers</a></li>
+				<li><a href="#">Schedule</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Location</a></li>
+				<li><a href="#">Blog</a></li>
 			</ul>
 		</nav-->
 		<div class="grid_8">
 			<img src="/assets/img/lonestarphp/logo.png" style="width:310px;" id="logo" />
-			<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FLone-Star-PHP%2F135732006497004&amp;layout=button_count&amp;show_faces=false&amp;width=200&amp;action=like&amp;font&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; margin-top:25px; height:21px;" allowTransparency="true"></iframe>
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FLone-Star-PHP%2F135732006497004&amp;layout=button_count&amp;show_faces=false&amp;width=200&amp;action=like&amp;font&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px;  height:21px; position:fixed; top:16px; right:0;" allowTransparency="true"></iframe>
 		</div>
 		
-		<div id="info" class="grid_15 prefix_1">
+		<div id="info" class="grid_15 prefix_1	">
 			<h1>Introducing the first annual<br />PHP Conference in North Texas</h1>
 			<h2>Join us for this day-long event and hear the best local speakers from the Lone Star State.</h2>
 
@@ -62,7 +63,7 @@
 			<div class="grid_5 alpha">
 				<h3>Where</h3>
 				<p><i>Crowne Plaza</i><br />
-				7800 Alpha Rd, Dallas, TX 75240 &nbsp;&nbsp;
+				7800 Alpha Rd, Dallas, TX  &nbsp;&nbsp;
 				<a href="http://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Crowne+Plaza+Suites+Dallas+Park+Central,+Alpha+Road,+Dallas,+TX&aq=0&sll=37.0625,-95.677068&sspn=49.444078,95.273438&ie=UTF8&hq=Crowne+Plaza+Suites+Dallas+Park+Central&hnear=Crowne+Plaza+Suites+Dallas+Park+Central,+7800+Alpha+Rd,+Dallas,+Texas+75240&ll=32.927866,-96.77173&spn=0.022477,0.038418&t=h" target="_blank">Map it →</a></p>
 			</div>
 			
@@ -75,7 +76,7 @@
 			<div class="grid_5 omega">
 				<h3>How</h3>
 				<p><i>Full Day - $60</i><br />
-				Register Online Today*</p>
+				Register Online Today</p>
 			</div>
 
 			<hr class="clear" />
@@ -88,8 +89,8 @@
     
     <div id="main" class="">
 		<section id="speakers">
-			<h2><i>The</i> Speakers</h2>
 			<div class="container_24 clearfix">
+				<h2><i>The</i> Speakers</h2>
 				<div class="speaker grid_5 alpha prefix_3">
 					<img src="/assets/img/lonestarphp/chrisCornutt.jpg" class="left" />
 					<h4>Chris Cornut</h4>
@@ -135,10 +136,10 @@
 		</section>
 
 		<section id="schedule">
-			<h2><i>The</i> Session Schedule</h2>
+			<div class="container_24 clearfix">
+				<h2><i>The</i> Session Schedule</h2>
 
-			<div class="container_24">
-				<table style="width:100%; text-align:left; color:#fff">
+				<table>
 					<thead>
 						<tr>
 							<th></th>
@@ -157,11 +158,11 @@
 						<tr>
 							<td>9:00am</td>
 							<td rowspan="2">
-								<h4>Intermediate/Advanced Zend_Form <a href="">Daniel Cousineau</a></h4>
+								<h4>Intermediate/Advanced Zend_Form <i>Daniel Cousineau</i></h4>
 								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 							</td>
 							<td rowspan="2">
-								<h4>Preparing LAMP for Production <a href="">Stephen Fierbaugh, <i>Pioneer Bible Translators</i></a></h4>
+								<h4>Preparing LAMP for Production <i>Stephen Fierbaugh, Pioneer Bible Translators</i></h4>
 								<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio.</p>
 							</td>
 						</tr>
@@ -174,7 +175,7 @@
 								<h4>Framework Development and Benchmarking</h4>
 							</td>
 							<td rowspan="2">
-								<h4>Why Developers Don't Matter <a href="">Joe Mills, <i>lifeBlue Media</i></a></h4>
+								<h4>Why Developers Don't Matter <i>Joe Mills, lifeBlue Media</i></h4>
 								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 							</td>
 						</tr>
@@ -184,11 +185,11 @@
 						<tr>
 							<td>11:00am</td>
 							<td rowspan="2">
-								<h4>Unsung Heroes of PHP <a href="">Jake Smith, <i>Click Here</i></a></h4>
+								<h4>Unsung Heroes of PHP <i>Jake Smith, Click Here</i></h4>
 								<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
 							</td>
 							<td rowspan="2">
-								<h4>Object Oriented Web Development - OOP PHP <a href="">Malvik Majithia, <i>Department of Research, The University of Texas at Dallas</i></a></h4>
+								<h4>Object Oriented Web Development - OOP PHP <i>Malvik Majithia, Department of Research, The University of Texas at Dallas</i></h4>
 								<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio.</p>
 							</td>
 						</tr>
@@ -208,11 +209,11 @@
 						<tr>
 							<td>1:30pm</td>
 							<td rowspan="2">
-								<h4>Anecdotal Development and Deployment <a href="">Brian Blood, <i>MacServe</i></a></h4>
+								<h4>Anecdotal Development and Deployment <i>Brian Blood, MacServe</i></h4>
 								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 							</td>
 							<td rowspan="2">
-								<h4>Drupal <a href="">Chris Christensen, <i>AllPlayers.com</i></a></h4>
+								<h4>Drupal <i>Chris Christensen, AllPlayers.com</i></h4>
 								<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit.</p>
 							</td>
 						</tr>
@@ -225,7 +226,7 @@
 								<h4>Scaling Your Application</h4>
 							</td>
 							<td rowspan="2">
-								<h4>Using PHP and MySQL to Build Applications with Windows Azure <a href="">Chris Koenig, <i>Microsoft</i></a></h4>
+								<h4>Using PHP and MySQL to Build Applications with Windows Azure <i>Chris Koenig, Microsoft</i></h4>
 								<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
 							</td>
 						</tr>
@@ -235,11 +236,11 @@
 						<tr>
 							<td>3:30pm</td>
 							<td rowspan="2">
-								<h4>Titanium for Mobile Development with PHP <a href="">Nicolas-Bryan: Wallace, <i>FyberStudios</i></a></h4>
+								<h4>Titanium for Mobile Development with PHP <i>Nicolas-Bryan: Wallace, FyberStudios</i></h4>
 								<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl</p>
 							</td>
 							<td rowspan="2">
-								<h4>Do you Queue? <a href="">Kevin Schroeder, <i>Zend</i></a></h4>
+								<h4>Do you Queue? <i>Kevin Schroeder, Zend</i></h4>
 								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 							</td>
 						</tr>
@@ -249,11 +250,11 @@
 						<tr>
 							<td>4:30pm</td>
 							<td rowspan="2">
-								<h4>Using Dependency Injection for Proper Unit Testing <a href="">Vic Cherubini, <i>Leftnode Software, Inc.</i></a></h4>
+								<h4>Using Dependency Injection for Proper Unit Testing <i>Vic Cherubini, Leftnode Software, Inc.</i></h4>
 								<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
 							</td>
 							<td rowspan="2">
-								<h4>PHP-GTK <a href="">Bob Majdak, <i>Ardent.Com, Inc</i></a></h4>
+								<h4>PHP-GTK <i>Bob Majdak, Ardent.Com, Inc</i></h4>
 								<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio.</p>
 							</td>
 						</tr>
@@ -273,25 +274,40 @@
 		
 
 		
-		<section class="container_24">
-			tet
-			<section class="grid_11">
-				<h2>About The Lone Star PHP Conference</h2>
-				<p>thois isldkjf kk jslkdf pwef kjslkdfj klsjdvlk sldfkj sdf oisdf kljs dfoij lksjdfoiu lkkjsdfuo jkjsdfjsl kjdfl lskjhdfkj lksjhdflkjlk sjdflj lskjfd lkjs ldfkj sldkfj slkdjflkjslkdfjl jsldkfj skkdflM</p>
-			</section>
+		<section id="misc">
+			<div class="container_24 clearfix">
+				<div class="grid_11" id="about">
+					<h2>About The Conference</h2>
+					<p>The Lone Star PHP Conference brings together some of the best local speakers from around Texas. They bring their experience and knowledge to this day-long event, the first PHP conference in the Lone Star State.</p>
 
-			<section class="grid_11">
-				<h2>Location</h2>
-			</section>
+					<p>The event will be on June 11th and will last from 8am through 5:30pm with a break for lunch. The price of the ticket includes beverages all day (water, coffee, sodas) and a boxed lunch for all attendees.</p>
+
+					<p>We hope you'll join us for our event!</p>
+				</div>
+
+				<div class="grid_12 prefix_1" id="location">
+					<h2>Location</h2>
+<iframe width="250" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="float:left; margin-right:10px;" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Crowne+Plaza+Suites+Dallas+Park+Central,+Alpha+Road,+Dallas,+TX&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=49.444078,95.273438&amp;ie=UTF8&amp;hq=Crowne+Plaza+Suites+Dallas+Park+Central&amp;hnear=Crowne+Plaza+Suites+Dallas+Park+Central,+7800+Alpha+Rd,+Dallas,+Texas+75240&amp;ll=32.928301,-96.771698&amp;spn=0.028817,0.042744&amp;z=13&amp;output=embed"></iframe><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Crowne+Plaza+Suites+Dallas+Park+Central,+Alpha+Road,+Dallas,+TX&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=49.444078,95.273438&amp;ie=UTF8&amp;hq=Crowne+Plaza+Suites+Dallas+Park+Central&amp;hnear=Crowne+Plaza+Suites+Dallas+Park+Central,+7800+Alpha+Rd,+Dallas,+Texas+75240&amp;ll=32.928301,-96.771698&amp;spn=0.028817,0.042744&amp;z=13" style="float:left;clear:left;">View Larger Map</a></small>
+
+					<p>This year's event will be happening at the <b>Crowne Plaza</b> in Dallas, just off 635 and Alpha in Addison.</p> 
+					<p>Discounted room rates are available upon request (good for Saturday night only)</p>
+					<p>7800 Alpha Road
+					Dallas, TX 75240</p>
+				</div>
+			</div>
 		</section>
 
 	</div>
     
 	<footer>
-		<br /><br /><br />
+		<h3>For more information about the event, contact <a href="mailto:info@phpdallas.org">info@phpdallas.org</a>.</h3>
+		<hr class="star" />
+		<br />
 		<a href="http://www.w3.org/html/logo/">
 			<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
 		</a>
+		<br /><br />
+		<a href="http://www.erichyland.com" target="_blank" id="design-sig">Website Design by Eric Hyland</a>
     </footer>
 </div> <!--! end of #container -->
 

@@ -1030,7 +1030,7 @@ hr.star { border:0; height:25px; background: url('/assets/img/lonestarphp/hr-sta
 
 
 
-header { margin-top:50px; margin-bottom:20px;}
+header, .header { margin-top:50px; margin-bottom:20px;}
 	#logo { margin-top:50px;}
 
 #info { padding-top:10px; padding-bottom:20px; font-family:MuseoSlab500, Georgia, Times, Serif; }
@@ -1041,52 +1041,67 @@ header { margin-top:50px; margin-bottom:20px;}
 	#info i { font-size:1.2em; color:#666; }
 	p#eventBright_note { background:url('/assets/img/lonestarphp/eventbrite.png') no-repeat 63% 50%; margin:0 auto; font-size:.9em;text-align:center; padding-right:100px; line-height:2.5em; color:#c6c4ab; margin-top:10px;}
 
-#main { clear:both; background:#2c2c2c; margin-top:20px; text-align:left;}
-	#main section {padding-bottom:40px;}
-	#main h2 { text-align:center; padding:10px; border-top:3px solid #702216; border-bottom:3px solid #555; letter-spacing:inherit; color:#fff; font-family: Clarendon, Georgia, Times, serif; font-weight:bold; text-transform:uppercase;  background: url('/assets/img/lonestarphp/star.png') no-repeat 42% 40%, url('/assets/img/lonestarphp/star.png') no-repeat 58% 40%; background-color:#111; }
+#main { clear:both; background:#2c2c2c; margin-top:20px; text-align:left; border-top:3px solid #702216; color:#ccc; }
+	#main section {padding-bottom:40px; background:url('/assets/img/lonestarphp/section-bg.jpg') repeat-x 0 0;}
+	section h2, .section h2 {  }
+	section h2 i, .section h2 i { position:relative; top:-.4em; color:#999; font-size:.7em; border-bottom:5px solid #999; text-transform:lowercase; font-style:italic; font-weight:normal; }
+	#main h2 { text-align:center; padding:10px; letter-spacing:inherit; color:#fff; font-family: Clarendon, Georgia, Times, serif; font-weight:bold; text-transform:uppercase;  background: url('/assets/img/lonestarphp/star.png') no-repeat 35% 40%, url('/assets/img/lonestarphp/star.png') no-repeat 65% 40%; }
 	
-	#speakers 
+	#speakers {}
+		#speakers h2 { 
+			background-color:#111;
+			background: url('/assets/img/lonestarphp/star.png') no-repeat 38% 40%, 
+						url('/assets/img/lonestarphp/star.png') no-repeat 62% 40%; }
 		.speaker { text-align:left; margin-bottom:30px; }
 			.speaker img { margin-bottom:10px; border:5px double #000; }
 			.speaker h4 { clear:both; margin-bottom:5px; }
 	
-	section h2 {  }
-	section h2 i { position:relative; top:-.4em; color:#999; font-size:.7em; border-bottom:5px solid #999; text-transform:lowercase; font-style:italic; font-weight:normal; }
+	#schedule {}
+		#schedule h2 { 
+			background-color:#111;
+			background: url('/assets/img/lonestarphp/star.png') no-repeat 32% 40%, 
+						url('/assets/img/lonestarphp/star.png') no-repeat 68% 40%; }
+						
+		#schedule table { width:100%; color:#fff }
+		
+		#schedule th { background:#272727; padding:7px 12px; text-transform:uppercase; text-align:center; color:#666; }
+			#schedule th:first-child { background:#2C2C2C; }
+		#schedule tr { height:30px; }
+			#schedule tr:nth-child(2n-1) { background:#292929;}
+		#schedule tr td { width:43%; padding:12px; border-bottom:1px solid #2C2C2C;border-left:1px solid #2C2C2C; margin-bottom:-1px; background:#222; color:#aaa;
+			-webkit-transition: all 500ms cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+			   -moz-transition: all 500ms cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+				 -o-transition: all 500ms cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+					transition: all 500ms cubic-bezier(0.785, 0.135, 0.150, 0.860); }
+			#schedule tr td:first-child { width:100px; height:25px; vertical-align:middle; font-family:Courier, Georgia, times, serif; color:#999; border-color:transparent; background:inherit; }
+			#schedule tr:hover td { background:rgba(250,250,250,.05	);  
+				-webkit-transition: all 300ms cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+				   -moz-transition: all 300ms cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+					 -o-transition: all 300ms cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+						transition: all 300ms cubic-bezier(0.785, 0.135, 0.150, 0.860); }
+			#schedule tr:hover td:hover { color:#fff; }
+			
+			#schedule tr.sessionBreak td {  font-family: Clarendon, Georgia, Times, serif; text-align:center; font-size:1.5em; vertical-align:middle; color:#fff; }
+				#schedule tr.sessionBreak td:first-child { text-align:left; font-size:1em; font-family:Courier; color:#999; }
 
-tr.sessionBreak { }
-tr.sessionBreak td { background:#2c2c2c; font-family: Clarendon, Georgia, Times, serif; text-align:center; font-size:1.5em; vertical-align:middle; color:#fff; }
-tr.sessionBreak td:first-child { text-align:left; font-size:1em; }
+		#schedule h4 { font-size:1.2em; color:#fff; margin-bottom:.3em;}
+			#schedule h4 i { color:#efe895; display:block;}
+			#schedule h4 a { font-weight:normal; padding-left:5px;}
+			#schedule h4 a:before { content:"_";}
+		
+		#schedule p { margin:0;}
 
-#schedule h2 { background: url('/assets/img/lonestarphp/star.png') no-repeat 38% 40%, url('/assets/img/lonestarphp/star.png') no-repeat 62% 40%; background-color:#111; }
-
-
-table th { background:#222; padding:7px 12px; text-transform:uppercase; text-align:center; color:#666; }
-table th:first-child { background:#2C2C2C;}
-table tr { height:30px;  }
-table tr:nth-child(2n-1) { background:#292929;}
-table tr td { 
--webkit-transition: all 500ms cubic-bezier(0.785, 0.135, 0.150, 0.860); 
-   -moz-transition: all 500ms cubic-bezier(0.785, 0.135, 0.150, 0.860); 
-     -o-transition: all 500ms cubic-bezier(0.785, 0.135, 0.150, 0.860); 
-        transition: all 500ms cubic-bezier(0.785, 0.135, 0.150, 0.860); }
-table tr:hover td { background:rgba(250,250,250,.05	);  
--webkit-transition: all 300ms cubic-bezier(0.785, 0.135, 0.150, 0.860); 
-   -moz-transition: all 300ms cubic-bezier(0.785, 0.135, 0.150, 0.860); 
-     -o-transition: all 300ms cubic-bezier(0.785, 0.135, 0.150, 0.860); 
-        transition: all 300ms cubic-bezier(0.785, 0.135, 0.150, 0.860);}
-
-table td { width:43%; padding:12px; border-bottom:1px solid #2C2C2C;border-left:1px solid #2C2C2C; margin-bottom:-1px; background:#222; color:#aaa;}
-table td:first-child { width:100px; height:25px; vertical-align:middle; font-family:Courier; color:#999; border-color:transparent; background:inherit; }
-
-table tr:hover td:hover { color:#fff; }
-
-table h4 { font-size:1.2em; color:#fff; margin-bottom:.3em;}
-table h4 a { font-weight:normal; padding-left:5px;}
-table h4 a:before { content:"_";}
-
-table p { margin:0;}
-
-
+	#misc h2 {  }
+		#about h2 { background-color:#111;
+			background: url('/assets/img/lonestarphp/star.png') no-repeat 2% 40%, 
+						url('/assets/img/lonestarphp/star.png') no-repeat 98% 40%; }
+		#location h2 { background-color:#111;
+			background: url('/assets/img/lonestarphp/star.png') no-repeat 27% 40%, 
+						url('/assets/img/lonestarphp/star.png') no-repeat 73% 40%; }
+						
+	footer, .footer { padding:25px; }
+	
+	a#design-sig { color:rgba(0,0,0,0.5); padding-left:25px; background:url('/assets/img/lonestarphp/logo-eric.png') no-repeat 0 40%;  padding-top:10px; padding-bottom:10px;}
 
 /* @group media.css
 ----------------------------------------------------------------------------------------------------
