@@ -33,6 +33,10 @@ class Session
 			return (isset($_SESSION[self::$_sessionKey][$keyName])) ? $_SESSION[self::$_sessionKey][$keyName] : null;
 		}
 	}
+	public static function set($keyName,$keyValue)
+	{
+		$_SESSION[self::$_sessionKey][strtoupper($keyName)] = $keyValue;
+	}
 
 }
 

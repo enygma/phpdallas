@@ -82,6 +82,8 @@ class Request
 		if(!empty($foundPath)){
 			require_once($foundPath);
 		}
+
+		Session::set('view_path',$this->_view_path);
 	}
 	
 	/**
