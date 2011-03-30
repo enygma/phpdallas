@@ -7,7 +7,7 @@ class Controller_Index extends Controller
 	{
 	}
 
-	public function index()
+	public function tmp()
 	{
 		$this->useTemplate = false;
 
@@ -31,7 +31,7 @@ class Controller_Index extends Controller
 			$this->setViewData('err',$valid->getFailureMessages());
 		}
 	}
-	public function tmp()
+	public function index()
 	{
 
 		$eventData = simplexml_load_file($_SERVER['DOCUMENT_ROOT'].'/assets/xml/lonestarphp-sessions.xml');
