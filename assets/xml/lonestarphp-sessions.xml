@@ -7,11 +7,11 @@
 		<session>
 			<speaker>
 				<name>Daniel Cousineau</name>
-				<company>RAPP Collins</company>
+				<company> </company>
 				<photo></photo>
 			</speaker>
 			<title>Disregard Inputs, Acquire Zend_Form</title>
-			<description>Learn in-depth Zend_Form techniques to automate and power your applications forms, with our without using Zend Framework. Learn everything from setup of a form to custom elements and organizational best practices.</description>
+			<description>Learn in-depth Zend_Form techniques to automate and power your applications forms, with or without using Zend Framework. Learn everything from setup of a form to custom elements and organizational best practices.</description>
 			<track>1</track>
 			<session_start>09:00</session_start>
 		</session>
@@ -33,7 +33,7 @@
 		<session>
 			<speaker>
 				<name>David Pennington</name>
-				<company>???</company>
+				<company>Code2Design</company>
 				<photo></photo>
 			</speaker>
 			<title>Framework Development and Benchmarking</title>
@@ -49,11 +49,12 @@
 			<speaker>
 				<name>Joe Mills</name>
 				<company>lifeBlue Media</company>
+				<company_link>http://lifeblue.com</company_link>
 				<photo></photo>
 			</speaker>
 			<title>Why Developers Don't Matter</title>
 			<description>
-				It.s all about the user! In this session we will discuss the graceful handling of client and server-side scripting and the 
+				It's all about the user! In this session we will discuss the graceful handling of client and server-side scripting and the 
 				importance of design thinking at all stages in the development process. We will discuss the value of designing for the 
 				user and the reality that even the smallest forms shouldn.t look like plugins. We believe design thinking should be 
 				infused at all levels in the development process and the user should be the central focus of all efforts. This requires 
@@ -68,6 +69,7 @@
 			<speaker>
 				<name>Jake Smith</name>
 				<company>Click Here</company>
+				<company_link>http://clickhere.com</company_link>
 				<photo></photo>
 			</speaker>
 			<title>Unsung Heroes of PHP</title>
@@ -83,7 +85,8 @@
 		<session>
 			<speaker>
 				<name>Malvik Majithia</name>
-				<company>Department of Research, The University of Texas at Dallas</company>
+				<company>The University of Texas at Dallas</company>
+				<company_link>http://utdallas.com</company_link>
 				<photo></photo>
 			</speaker>
 			<title>Object Oriented Web Development - OOP PHP</title>
@@ -108,6 +111,7 @@
 			<speaker>
 				<name>Brian Blood</name>
 				<company>MacServe</company>
+				<company_link>http://macserve.net</company_link>
 				<photo></photo>
 			</speaker>
 			<title>Anecdotal Development and Deployment</title>
@@ -125,6 +129,7 @@
 			<speaker>
 				<name>Chris Christensen</name>
 				<company>AllPlayers.com</company>
+				<company_link>http://allplayers.com</company_link>
 				<photo></photo>
 			</speaker>
 			<title>Drupal</title>
@@ -141,6 +146,7 @@
 			<speaker>
 				<name>Steve Iboubi</name>
 				<company>SoftLayer Technologies, Inc.</company>
+				<company_link>http://softlayer.com</company_link>
 				<photo></photo>
 			</speaker>
 			<title>Scaling Your Application</title>
@@ -154,6 +160,7 @@
 			<speaker>
 				<name>Chris Koenig</name>
 				<company>Microsoft</company>
+				<company_link>http://microsoft.com</company_link>
 				<photo></photo>
 			</speaker>
 			<title>Using PHP and MySQL to Build Applications with Windows Azure</title>
@@ -166,15 +173,13 @@
 		</session>
 		<session>
 			<speaker>
-				<name>Nick Wallace</name>
-				<company>FyberStudios</company>
+				<name>TBD</name>
+				<company> </company>
 				<photo></photo>
 			</speaker>
-			<title>Titanium for Mobile Development with PHP</title>
+			<title>TBD</title>
 			<description>
-				I will be walking people through setting up Titanium on OS X as well as the iOS SDK and Android SDK, then showing an 
-				easy method of integrating the mobile app with your PHP based web framework. Once finished I will walk through the 
-				steps of building and submitting apps.
+				Watch this space for another great session!
 			</description>
 			<track>1</track>
 			<session_start>15:30</session_start>
@@ -183,6 +188,7 @@
 			<speaker>
 				<name>Kevin Schroeder</name>
 				<company>Zend</company>
+				<company_link>http://zend.com</company_link>
 				<photo></photo>
 			</speaker>
 			<title>Do you Queue?</title>
@@ -198,6 +204,7 @@
 			<speaker>
 				<name>Vic Cherubini</name>
 				<company>Leftnode Software, Inc.</company>
+				<company_link>http://leftnode.com</company_link>
 				<photo></photo>
 			</speaker>
 			<title>Using Dependency Injection for Proper Unit Testing</title>
@@ -215,15 +222,12 @@
 			<speaker>
 				<name>Bob Majdak</name>
 				<company>Ardent.Com, Inc</company>
+				<company_link>http://ardent.com</company_link>
 				<photo></photo>
 			</speaker>
 			<title>PHP-GTK</title>
 			<description>
-				 If you're not unit testing, you should be. This topic will cover manual dependency injection, why it's essential for 
-				 unit testing, and how to use it with your code. It will cover both writing unit tested code from scratch and taking an 
-				 existing class and refactoring it with unit tests and dependency injection. I'll start off with some code I've written 
-				 and how I built it with tests, show where other objects are injected and why. Then I'll pull up an old dirty class 
-				 and refactor it live with DI.
+				Setting up and building PHP-GTK applications on the desktop workspace. Look ma, no webserver!
 			</description>
 			<track>2</track>
 			<session_start>16:30</session_start>
