@@ -30,12 +30,13 @@ foreach($speakerIds as $id):
 	}else{
 		$img = '/assets/img/lonestarphp/default.jpg';
 	}
+	$company_link = (isset($speaker->company_link)) ? $speaker->company_link : '';
 	?>
 
 	<div class="<?php echo $divClass?>">
 		<img src="<?php echo $img; ?>" class="left" />
 		<h4><?php echo $speaker->name; ?></h4>
-		<a href=""><?php echo $speaker->company; ?></a>
+		<a href="<?php echo $company_link; ?>"><?php echo $speaker->company; ?></a>
 	</div>
 	<?php
 	$col++;

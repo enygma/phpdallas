@@ -13,7 +13,7 @@
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title></title>
+  <title>Lone Star PHP Conference - June 11th, Dallas, Tx</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -109,23 +109,35 @@
 			<div class="container_24 clearfix">
 				<div class="grid_11" id="about">
 					<h2>About The Conference</h2>
-					<p>The Lone Star PHP Conference brings together some of the best local speakers from around Texas. They bring their experience and knowledge to this day-long event, the first PHP conference in the Lone Star State.</p>
+					<p>The Lone Star PHP Conference brings together some of the best local speakers from around Texas. They bring their experience and knowledge to this day-long event, the first annual PHP conference in North Texas.</p>
 
-					<p>The event will be on June 11th and will last from 8am through 5:30pm with a break for lunch. The price of the ticket includes beverages all day (water, coffee, sodas) and a boxed lunch for all attendees.</p>
+					<p>The event will be on <b>June 11th</b> and will last from <b>8am through 5:30pm</b> with a break for lunch. The price of the ticket includes beverages all day (water, coffee, sodas) and a boxed lunch for all attendees.</p>
 
 					<p>We hope you'll join us for our event!</p>
 
 					<p>Brought to you by <a href="http://phpdallas.org">DallasPHP</a></p>
+					
+					<p><b>Follow Us:</b><br />
+					<a href="http://twitter.com/lonestarphp">@lonestarphp</a><br />
+					<a href="http://facebook.com/lonestarconference">facebook.com/lonestarconference</a><br />
+					#dallasphp @ irc.<a href="http://freenode.net">freenode.net</a><br />
+					<br />
+					<a href="http://joind.in/event/lonestarphp">Lone Star PHP on Joind.in</a><br />
+					</p>
 				</div>
 
 				<div class="grid_12 prefix_1" id="location">
 					<h2>Location</h2>
 <iframe width="250" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="float:left; margin-right:10px;" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Crowne+Plaza+Suites+Dallas+Park+Central,+Alpha+Road,+Dallas,+TX&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=49.444078,95.273438&amp;ie=UTF8&amp;hq=Crowne+Plaza+Suites+Dallas+Park+Central&amp;hnear=Crowne+Plaza+Suites+Dallas+Park+Central,+7800+Alpha+Rd,+Dallas,+Texas+75240&amp;ll=32.928301,-96.771698&amp;spn=0.028817,0.042744&amp;z=13&amp;output=embed"></iframe><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Crowne+Plaza+Suites+Dallas+Park+Central,+Alpha+Road,+Dallas,+TX&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=49.444078,95.273438&amp;ie=UTF8&amp;hq=Crowne+Plaza+Suites+Dallas+Park+Central&amp;hnear=Crowne+Plaza+Suites+Dallas+Park+Central,+7800+Alpha+Rd,+Dallas,+Texas+75240&amp;ll=32.928301,-96.771698&amp;spn=0.028817,0.042744&amp;z=13" style="float:left;clear:left;">View Larger Map</a></small>
 
-					<p>This year's event will be happening at the <b>Crowne Plaza</b> in Dallas, just off 635 and Alpha in Addison.</p> 
-					<p>Discounted room rates are available upon request (rate good for Friday and Saturday night only)</p>
-					<p>7800 Alpha Road
+					<p>This year's event will be happening at the <b>Crowne Plaza</b> in Dallas, just off of 635 and Alpha</p> 
+					<p>Discounted room rates are <b>$89</b> for Friday & Saturday nights and <b>$119</b> folloing that.</p>
+					<p><b>Address:</b><br/>
+					7800 Alpha Road<br />
 					Dallas, TX 75240</p>
+					<p>
+					<b>Phone:</b> (972) 233-7600
+					</p>
 				</div>
 			</div>
 		</section>
@@ -172,7 +184,7 @@
   <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
        change the UA-XXXXX-X to be your site's ID -->
   <script>
-   var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+   var _gaq = [['_setAccount', 'UA-246789-4'], ['_trackPageview']];
    (function(d, t) {
     var g = d.createElement(t),
         s = d.getElementsByTagName(t)[0];
