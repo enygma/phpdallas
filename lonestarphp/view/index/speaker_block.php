@@ -34,7 +34,7 @@ foreach($speakerIds as $id):
 	?>
 
 	<div class="<?php echo $divClass?>">
-		<img src="<?php echo $img; ?>" class="left" />
+		<a href="#<?php echo str_replace(' ','-',strtolower($speaker->name)); ?>"><img src="<?php echo $img; ?>" class="left" border="0"/></a>
 		<h4><?php echo $speaker->name; ?></h4>
 		<a href="<?php echo $company_link; ?>"><?php echo $speaker->company; ?></a>
 	</div>

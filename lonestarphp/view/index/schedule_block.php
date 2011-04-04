@@ -37,6 +37,7 @@ ksort($byTime);
 		<td><?php echo $time; ?></td>
 		<?php foreach($currentSessions as $session): ?>
 			<td>
+				<a name="<?php echo str_replace(' ','-',strtolower($session->speaker->name)); ?>"></a>
 				<h4><?php echo $session->title; ?> <i><?php echo $session->speaker->name; ?></i></h4>
 				<?php echo $session->description; ?>
 			</td>	
