@@ -32,15 +32,13 @@
 		</session>
 		<session>
 			<speaker>
-				<name>David Pennington</name>
-				<company>Code2Design</company>
+				<name>TBD</name>
+				<company> </company>
+				<company_link> </company_link>
 				<photo></photo>
 			</speaker>
-			<title>Framework Development and Benchmarking</title>
+			<title>TBD</title>
 			<description>
-				In this session I build a sample application on 5-7 different frameworks and then benchmark and explain the server loads 
-				and design patterns each one uses. I will then compare it to baseline PHP and talk about which elements of frameworks to 
-				watch out for and how to use the best parts.
 			</description>
 			<track>1</track>
 			<session_start>10:00</session_start>
@@ -173,13 +171,18 @@
 		</session>
 		<session>
 			<speaker>
-				<name>TBD</name>
-				<company> </company>
+				<name>Randy Hoyt</name>
+				<company>Imaginuity</company>
+				<company_link>http://www.imaginuity.com</company_link>
 				<photo></photo>
 			</speaker>
-			<title>TBD</title>
+			<title>Extending and Scaling WordPress</title>
 			<description>
-				Watch this space for another great session!
+			    WordPress is an effective platform for powering large web sites with various types of content and structured 
+			    data. In this case study, Randy Hoyt will share from his experience developing a network of shopping center 
+			    web sites on WordPress for a large property management company. He will explore the newer WordPress 3.x features, 
+			    its child theme architecture, custom plugins, caching techniques, and cloud hosting infrastructure used to 
+			    extend and scale WordPress for this project.
 			</description>
 			<track>1</track>
 			<session_start>15:30</session_start>
