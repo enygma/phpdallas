@@ -115,7 +115,7 @@
 			<h2><i>The</i> Sponsers</h2>
 
 			<a href="http://www.softlayer.com/" id="softlayer" class="sponser" target="_blank">SOFTLAYER</a>
-		
+			<a href="http://www.zend.com/" id="zend" class="sponser" target="_blank">Zend</a>
 
 
 			<!--h3 style="text-align:center; color:#aaa; font-size:1.3em;">We'd like to extend our deepest thanks to these organizations that has made this event possible</h3-->			

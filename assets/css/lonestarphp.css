@@ -1057,9 +1057,11 @@ header, .header { margin-top:50px; margin-bottom:20px;}
 			.speaker h4 { clear:both; margin-bottom:5px; }
 			
 	#sponsers { text-align: center; }
-		a.sponser {margin:4em auto 3em;display:block;text-indent:-99999px; }
-		#softlayer { width:350px; height:32px; background:url('/assets/img/lonestarphp/softlayer-sprite.png') no-repeat 0 0; }
+		a.sponser {margin:4em 50px 3em 0;display:block;text-indent:-99999px; float: left; }
+		#softlayer { width:350px; height:32px; background:url('/assets/img/lonestarphp/softlayer-sprite.png') no-repeat 0 0; margin-left: 150px; }
 			#softlayer:hover { background-position:0 -32px}
+		#zend { width: 250px; height: 100px; margin: 1.5em auto 1em; background: url('/assets/img/lonestarphp/zend-sprite.png') no-repeat 0 0; }
+			#zend:hover { background-position:0 -100px; }
 	
 	
 	#schedule {}
