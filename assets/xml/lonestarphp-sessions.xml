@@ -33,13 +33,18 @@
 		</session>
 		<session>
 			<speaker>
-				<name>TBD</name>
-				<company> </company>
-				<company_link> </company_link>
+				<name>Kevin Schroeder</name>
+				<company>Zend</company>
+				<company_link>http://zend.com</company_link>
 				<photo></photo>
 			</speaker>
-			<title>TBD</title>
+			<title>Building mobile and tablet applications in Flex and PHP with Flash Builder for PHP</title>
 			<description>
+				The future of computing has a significant focus on making sure that mobile and hand-held devices have access 
+				to the same data that is available on a standard web page or desktop app.  In this talk we will explore how 
+				you can use the new Flash Builder for PHP to build data-aware mobile and tablet applications using 
+				Flash/AIR and Flex.  We will cover the basics of MXML, ActionScript and implementing remote access calls 
+				to a PHP-driven backend solution.
 			</description>
 			<track>1</track>
 			<session_start>10:00</session_start>
