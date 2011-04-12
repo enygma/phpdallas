@@ -52,6 +52,13 @@
 		<div class="grid_8">
 			<img src="/assets/img/lonestarphp/logo.png" style="width:310px;" id="logo" />
 			<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FLone-Star-PHP%2F135732006497004&amp;layout=button_count&amp;show_faces=false&amp;width=200&amp;action=like&amp;font&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px;  height:21px; position:fixed; top:16px; right:0;" allowTransparency="true"></iframe>
+			
+			<br><br>
+			
+			<a href="#schedule" style="color:#BF3324;font-weight:bold">schedule</a> |
+			<a href="#speakers" style="color:#BF3324;font-weight:bold">speakers</a> |
+			<a href="#sponsers" style="color:#BF3324;font-weight:bold">sponsers</a> |
+			<a href="#about" style="color:#BF3324;font-weight:bold">about</a>
 		</div>
 		
 		<div id="info" class="grid_15 prefix_1	">
@@ -103,12 +110,22 @@
 				<?php echo $schedule_block; ?>
 		</section>
 		
+	<section id="sponsers">
+		<div class="container_24 clearfix">
+			<h2><i>The</i> Sponsers</h2>
 
+			<a href="http://www.softlayer.com/" id="softlayer" class="sponser" target="_blank">SOFTLAYER</a>
+		
+
+
+			<!--h3 style="text-align:center; color:#aaa; font-size:1.3em;">We'd like to extend our deepest thanks to these organizations that has made this event possible</h3-->			
+		</div>
+	</section>
 		
 		<section id="misc">
 			<div class="container_24 clearfix">
 				<div class="grid_11" id="about">
-					<h2>About The Conference</h2>
+					<h2>About <i>the</i> Conference</h2>
 					<p>The Lone Star PHP Conference brings together some of the best local speakers from around Texas. They bring their experience and knowledge to this day-long event, the first annual PHP conference in North Texas.</p>
 
 					<p>The event will be on <b>June 11th</b> and will last from <b>8am through 5:30pm</b> with a break for lunch. The price of the ticket includes beverages all day (water, coffee, sodas) and a boxed lunch for all attendees.</p>
@@ -127,7 +144,7 @@
 				</div>
 
 				<div class="grid_12 prefix_1" id="location">
-					<h2>Location</h2>
+					<h2><i>the</i> Location</h2>
 <iframe width="250" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="float:left; margin-right:10px;" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Crowne+Plaza+Suites+Dallas+Park+Central,+Alpha+Road,+Dallas,+TX&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=49.444078,95.273438&amp;ie=UTF8&amp;hq=Crowne+Plaza+Suites+Dallas+Park+Central&amp;hnear=Crowne+Plaza+Suites+Dallas+Park+Central,+7800+Alpha+Rd,+Dallas,+Texas+75240&amp;ll=32.928301,-96.771698&amp;spn=0.028817,0.042744&amp;z=13&amp;output=embed"></iframe><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Crowne+Plaza+Suites+Dallas+Park+Central,+Alpha+Road,+Dallas,+TX&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=49.444078,95.273438&amp;ie=UTF8&amp;hq=Crowne+Plaza+Suites+Dallas+Park+Central&amp;hnear=Crowne+Plaza+Suites+Dallas+Park+Central,+7800+Alpha+Rd,+Dallas,+Texas+75240&amp;ll=32.928301,-96.771698&amp;spn=0.028817,0.042744&amp;z=13" style="float:left;clear:left;">View Larger Map</a></small>
 
 					<p>This year's event will be happening at the <b>Crowne Plaza</b> in Dallas, just off of 635 and Alpha</p> 
@@ -149,7 +166,7 @@
 		<hr class="star" />
 		<br />
 		<a href="http://www.w3.org/html/logo/">
-			<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+			<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics" style="margin-left:30px;">
 		</a>
 		<br /><br />
 		<a href="http://www.erichyland.com" target="_blank" id="design-sig">Website Design by Eric Hyland</a>

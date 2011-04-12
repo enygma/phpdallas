@@ -1055,6 +1055,12 @@ header, .header { margin-top:50px; margin-bottom:20px;}
 		.speaker { text-align:left; margin-bottom:30px; }
 			.speaker img { margin-bottom:10px; border:5px double #000; }
 			.speaker h4 { clear:both; margin-bottom:5px; }
+			
+	#sponsers { text-align: center; }
+		a.sponser {margin:4em auto 3em;display:block;text-indent:-99999px; }
+		#softlayer { width:350px; height:32px; background:url('/assets/img/lonestarphp/softlayer-sprite.png') no-repeat 0 0; }
+			#softlayer:hover { background-position:0 -32px}
+	
 	
 	#schedule {}
 		#schedule h2 { 
