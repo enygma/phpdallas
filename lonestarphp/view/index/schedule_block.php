@@ -12,7 +12,7 @@ foreach($eventDetail->session_detail->session as $session){
 
 $byTime['08:00'] = array('internalType'=>'sessionBreak','desc'=>'Registration');
 $byTime['12:00'] = array('internalType'=>'sessionBreak','desc'=>'Lunch (Provided)');
-$byTime['17:30'] = array('internalType'=>'sessionBreak','desc'=>'After-Party');
+$byTime['17:30'] = array('internalType'=>'sessionBreak','desc'=>'After-Party<br/><span style="color:#EFE895">Sponsored By</span><br /><a href="http://softlayer.com"><img src="/assets/img/lonestarphp/softlayer-lsp-sponsor.jpg" border="0"/></a>');
 
 ksort($byTime);
 ?>

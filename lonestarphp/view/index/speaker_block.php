@@ -1,7 +1,10 @@
 <?php
 $speakers = array();
 
+$speakerNames = array();
 foreach($eventDetail->session_detail->session as $detail){
+	if(in_array((string)$detail->speaker->name,$speakerNames)){ 
+		continue; }else{ $speakerNames[] = (string)$detail->speaker->name; }
 	$speakers[] = $detail->speaker;
 }
 

@@ -112,7 +112,7 @@
 		
 	<section id="sponsors">
 		<div class="container_24 clearfix">
-			<h2><i>The</i> Sponsers</h2>
+			<h2><i>The</i> Sponsors</h2>
 
 			<a href="http://www.softlayer.com/" id="softlayer" class="sponsor" target="_blank">SOFTLAYER</a>
 			<a href="http://www.zend.com/" id="zend" class="sponsor" target="_blank">Zend</a>
