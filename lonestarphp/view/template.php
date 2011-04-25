@@ -57,7 +57,7 @@
 			
 			<a href="#schedule" style="color:#BF3324;font-weight:bold">schedule</a> |
 			<a href="#speakers" style="color:#BF3324;font-weight:bold">speakers</a> |
-			<a href="#sponsers" style="color:#BF3324;font-weight:bold">sponsers</a> |
+			<a href="#sponsors" style="color:#BF3324;font-weight:bold">sponsors</a> |
 			<a href="#about" style="color:#BF3324;font-weight:bold">about</a>
 		</div>
 		
@@ -110,12 +110,13 @@
 				<?php echo $schedule_block; ?>
 		</section>
 		
-	<section id="sponsers">
+	<section id="sponsors">
 		<div class="container_24 clearfix">
 			<h2><i>The</i> Sponsers</h2>
 
-			<a href="http://www.softlayer.com/" id="softlayer" class="sponser" target="_blank">SOFTLAYER</a>
-			<a href="http://www.zend.com/" id="zend" class="sponser" target="_blank">Zend</a>
+			<a href="http://www.softlayer.com/" id="softlayer" class="sponsor" target="_blank">SOFTLAYER</a>
+			<a href="http://www.zend.com/" id="zend" class="sponsor" target="_blank">Zend</a>
+			<a href="http://www.interoperabilitybridges.com/" id="interoperability" class="sponsor" target="_blank">Zend</a>
 
 
 			<!--h3 style="text-align:center; color:#aaa; font-size:1.3em;">We'd like to extend our deepest thanks to these organizations that has made this event possible</h3-->			

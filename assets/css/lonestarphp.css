@@ -1056,12 +1056,14 @@ header, .header { margin-top:50px; margin-bottom:20px;}
 			.speaker img { margin-bottom:10px; border:5px double #000; }
 			.speaker h4 { clear:both; margin-bottom:5px; }
 			
-	#sponsers { text-align: center; }
-		a.sponser {margin:4em 50px 3em 0;display:block;text-indent:-99999px; float: left; }
-		#softlayer { width:350px; height:32px; background:url('/assets/img/lonestarphp/softlayer-sprite.png') no-repeat 0 0; margin-left: 150px; }
+	#sponsors { text-align: center; }
+		a.sponsor {margin:4em 50px 3em 0;display:block;text-indent:-99999px; float: left; }
+		#softlayer { width:350px; height:32px; background:url('/assets/img/lonestarphp/softlayer-sprite.png') no-repeat 0 0; margin-left: 0px; }
 			#softlayer:hover { background-position:0 -32px}
 		#zend { width: 250px; height: 100px; margin: 1.5em auto 1em; background: url('/assets/img/lonestarphp/zend-sprite.png') no-repeat 0 0; }
 			#zend:hover { background-position:0 -100px; }
+		#interoperability { width: 254px; height: 100px; margin: 2em auto 1em; background: url('/assets/img/lonestarphp/interoperability-sprite.png') no-repeat 0 0; margin-left:50px; }
+			#interoperability:hover { background-position:0 -100px; }
 	
 	
 	#schedule {}
