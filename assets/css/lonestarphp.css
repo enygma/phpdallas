@@ -1041,11 +1041,23 @@ header, .header { margin-top:50px; margin-bottom:20px;}
 	#info i { font-size:1.2em; color:#666; }
 	p#eventBright_note { background:url('/assets/img/lonestarphp/eventbrite.png') no-repeat 63% 50%; margin:0 auto; font-size:.9em;text-align:center; padding-right:100px; line-height:2.5em; color:#c6c4ab; margin-top:10px;}
 
-#main { clear:both; background:#2c2c2c; margin-top:20px; text-align:left; border-top:3px solid #702216; color:#ccc; }
+#main { clear:both; background:#2c2c2c; text-align:left; color:#ccc; margin-top:65px }
 	#main section {padding-bottom:40px; background:url('/assets/img/lonestarphp/section-bg.jpg') repeat-x 0 0;}
 	section h2, .section h2 {  }
 	section h2 i, .section h2 i { position:relative; top:-.4em; color:#999; font-size:.7em; border-bottom:5px solid #999; text-transform:lowercase; font-style:italic; font-weight:normal; }
 	#main h2 { text-align:center; padding:10px; letter-spacing:inherit; color:#fff; font-family: Clarendon, Georgia, Times, serif; font-weight:bold; text-transform:uppercase;  background: url('/assets/img/lonestarphp/star.png') no-repeat 35% 40%, url('/assets/img/lonestarphp/star.png') no-repeat 65% 40%; }
+	
+	#giveaway { background-image:none !important; background:#d9d7b7 !important; padding-bottom:0px !important; border-top:3px double rgba(0,0,0,0.1); }
+		#giveaway > div{ position:relative; height:130px; }
+		#giveaway h2 { text-align:left; background-image:none;line-height:1.3em; float:left; margin-top:10px; text-shadow:0 1px 0 rgba(0,0,0,0.5); }
+			#giveaway h2 i { color:#fff;border-color:#999; }
+			#giveaway h2 strong { color:#bd3926; display:block; font-size:2em; letter-spacing:; text-shadow:0 1px 0 rgba(255,255,255,0.5); }
+			#giveaway h2 strong span { letter-spacing:-6px; }
+		#giveaway img { position:absolute; bottom:0;left:300px }
+		#giveaway h3,
+		#giveaway h4 { margin-left:570px; }
+		#giveaway h3 { padding-top:20px; font-size:1.8em; margin-bottom:10px; color:#555;}
+		#giveaway a { margin-left:295px; color: #bd3926;}
 	
 	#speakers {}
 		#speakers h2 { 
