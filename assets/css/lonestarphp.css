@@ -1047,6 +1047,7 @@ header, .header { margin-top:50px; margin-bottom:20px;}
 	section h2 i, .section h2 i { position:relative; top:-.4em; color:#999; font-size:.7em; border-bottom:5px solid #999; text-transform:lowercase; font-style:italic; font-weight:normal; }
 	#main h2 { text-align:center; padding:10px; letter-spacing:inherit; color:#fff; font-family: Clarendon, Georgia, Times, serif; font-weight:bold; text-transform:uppercase;  background: url('/assets/img/lonestarphp/star.png') no-repeat 35% 40%, url('/assets/img/lonestarphp/star.png') no-repeat 65% 40%; }
 	
+	
 	#giveaway { background-image:none !important; background:#d9d7b7 !important; padding-bottom:0px !important; border-top:3px double rgba(0,0,0,0.1); }
 		#giveaway > div{ position:relative; height:130px; }
 		#giveaway h2 { text-align:left; background-image:none;line-height:1.3em; float:left; margin-top:10px; text-shadow:0 1px 0 rgba(0,0,0,0.5); }
