@@ -94,7 +94,17 @@
 		</div>
     </header>
     
-    <div id="main" class="">
+    <div id="main" class="" style="border-top:0;margin-top:65px">
+		<section id="giveaway" style="">
+			<div class="container_24 clearfix">
+			<h2><i>The</i> Lone Star PHP <strong>Give<span>away</span></strong></h2>
+			<img src="/assets/img/lonestarphp/giveaway-covers2.png" />
+			<h3>5 Books. 1712 Pages. $179.95 value. </h3>
+			<h4>Register now and be entered for chance to win this <strong style="color:#555;">O'Reilly Book Package.</strong></h4>
+			<a href="/giveaway/">Find out More →</a>
+			</div>
+		</section>
+	
 		<section id="speakers">
 			<div class="container_24 clearfix">
 				<h2><i>The</i> Speakers</h2>
