@@ -1026,6 +1026,7 @@ hr.star { border:0; height:25px; background: url('/assets/img/lonestarphp/hr-sta
 	border-radius:10px; moz-border-radius:10px webkit-border-radius:10px; }
 .button:hover { text-decoration:none; color:#e6c6c1; }
 .button.disable { background:#c6c4ab; border:0;}
+.button.disable:hover { color:#fff;}
 .flurish { width:190px; margin-bottom:10px;  margin-left:auto; margin-right:auto;  border-bottom:1px dotted #aaa;padding-bottom:10px;  font-size:2em;font-family: MuseoSlab500, Georgia, Times; text-transform:uppercase; background:url('/assets/img/lonestarphp/flurish-left.png') no-repeat 0 40%,  url('/assets/img/lonestarphp/flurish-right.png') no-repeat 100% 40%;;}
 
 
