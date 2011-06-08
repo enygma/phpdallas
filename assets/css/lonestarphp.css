@@ -1081,8 +1081,8 @@ header, .header { margin-top:50px; margin-bottom:20px;}
 			#interoperability:hover { background-position:0 -88px; }
 		#zippykid { width: 300px; height: 92px; margin: 1.3em auto 1em; background: url('/assets/img/lonestarphp/zippykid-sprite.png') no-repeat 0 0; margin-left:100px; }
 			#zippykid:hover { background-position:0 -92px; }
-		#allplayers { width:350px; height:63px; margin:2em auto 1em; background:url('/assets/img/lonestarphp/allplayers-sprite.png') no-repeat 0 0; margin-left:100px;}
-			#allplayers:hover { background-position:0 -63px; }
+		#allplayers { width:350px; height:65px; margin:2em auto 1em; background:url('/assets/img/lonestarphp/allplayers-sprite.png') no-repeat 0 0; margin-left:100px;}
+			#allplayers:hover { background-position:0 -65px; }
 	
 	#schedule {}
 		#schedule h2 { 
