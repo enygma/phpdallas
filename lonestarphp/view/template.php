@@ -89,7 +89,7 @@
 			<hr class="clear" />
 			
 			<a href="http://lonestarphp.eventbrite.com" class="button disable">Register Now!</a>
-			<img src="/assets/img/lonestarphp/soldout.png" style="position:absolute;top:320px; right:360px" />
+			<img src="/assets/img/lonestarphp/soldout.png" style="position:absolute;top:265px; right:190px" />
 			<p class="note" id="eventBright_note">Registration Powered by <i style="display:none;">EventBright</i></p>
 			
 		</div>

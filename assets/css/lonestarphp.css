@@ -1035,7 +1035,7 @@ hr.star { border:0; height:25px; background: url('/assets/img/lonestarphp/hr-sta
 header, .header { margin-top:50px; margin-bottom:20px;}
 	#logo { margin-top:50px;}
 
-#info { padding-top:10px; padding-bottom:20px; font-family:MuseoSlab500, Georgia, Times, Serif; }
+#info { padding-top:10px; padding-bottom:20px; font-family:MuseoSlab500, Georgia, Times, Serif; position:relative;}
 	#info h1 { color:#702216; }
 	#info h2 { color:rgba(0,0,0,0.3	);}
 	#info h3 { font-family: Clarendon; font-weight:bold; text-transform:uppercase; font-size:2em; margin-bottom:10px; }
