@@ -88,9 +88,10 @@
 
 			<hr class="clear" />
 			
-			<a href="http://lonestarphp.eventbrite.com" class="button">Register Now!</a>
-			
+			<a href="http://lonestarphp.eventbrite.com" class="button disable">Register Now!</a>
+			<img src="/assets/img/lonestarphp/soldout.png" style="position:absolute;top:320px; right:360px" />
 			<p class="note" id="eventBright_note">Registration Powered by <i style="display:none;">EventBright</i></p>
+			
 		</div>
     </header>
     
@@ -127,6 +128,8 @@
 			<a href="http://www.softlayer.com/" id="softlayer" class="sponsor" target="_blank">SOFTLAYER</a>
 			<a href="http://www.zend.com/" id="zend" class="sponsor" target="_blank">Zend</a>
 			<a href="http://www.interoperabilitybridges.com/" id="interoperability" class="sponsor" target="_blank">Zend</a>
+			<a href="http://www.zippykid.com/" id="zippykid" class="sponsor" target="_blank">ZippyKid</a>
+			<a href="http://www.allplayers.com/" id="allplayers" class="sponsor" target="_blank">allplayers</a>
 
 
 			<!--h3 style="text-align:center; color:#aaa; font-size:1.3em;">We'd like to extend our deepest thanks to these organizations that has made this event possible</h3-->			

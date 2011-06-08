@@ -1025,6 +1025,7 @@ hr.star { border:0; height:25px; background: url('/assets/img/lonestarphp/hr-sta
 	background-repeat:no-repeat, no-repeat; background-position:20% 40%, 80% 40%;
 	border-radius:10px; moz-border-radius:10px webkit-border-radius:10px; }
 .button:hover { text-decoration:none; color:#e6c6c1; }
+.button.disable { background:#c6c4ab; border:0;}
 .flurish { width:190px; margin-bottom:10px;  margin-left:auto; margin-right:auto;  border-bottom:1px dotted #aaa;padding-bottom:10px;  font-size:2em;font-family: MuseoSlab500, Georgia, Times; text-transform:uppercase; background:url('/assets/img/lonestarphp/flurish-left.png') no-repeat 0 40%,  url('/assets/img/lonestarphp/flurish-right.png') no-repeat 100% 40%;;}
 
 
@@ -1070,14 +1071,17 @@ header, .header { margin-top:50px; margin-bottom:20px;}
 			.speaker h4 { clear:both; margin-bottom:5px; }
 			
 	#sponsors { text-align: center; }
-		a.sponsor {margin:4em 50px 3em 0;display:block;text-indent:-99999px; float: left; }
-		#softlayer { width:350px; height:32px; background:url('/assets/img/lonestarphp/softlayer-sprite.png') no-repeat 0 0; margin-left: 0px; }
-			#softlayer:hover { background-position:0 -32px}
-		#zend { width: 250px; height: 100px; margin: 1.5em auto 1em; background: url('/assets/img/lonestarphp/zend-sprite.png') no-repeat 0 0; }
+		a.sponsor {margin:4em 90px 3em 0;display:block;text-indent:-99999px; float: left; }
+		#softlayer { width:306px; height:28px; background:url('/assets/img/lonestarphp/softlayer-sprite.png') no-repeat 0 0; margin-left: 0px; }
+			#softlayer:hover { background-position:0 -28px}
+		#zend { width: 250px; height: 100px; margin-top: 1.5em; background: url('/assets/img/lonestarphp/zend-sprite.png') no-repeat 0 0; }
 			#zend:hover { background-position:0 -100px; }
-		#interoperability { width: 254px; height: 100px; margin: 2em auto 1em; background: url('/assets/img/lonestarphp/interoperability-sprite.png') no-repeat 0 0; margin-left:50px; }
-			#interoperability:hover { background-position:0 -100px; }
-	
+		#interoperability { width:224px; height:88px; margin: 2em auto 1em; background: url('/assets/img/lonestarphp/interoperability-sprite.png') no-repeat 0 0; margin-right:0; }
+			#interoperability:hover { background-position:0 -88px; }
+		#zippykid { width: 300px; height: 92px; margin: 1.3em auto 1em; background: url('/assets/img/lonestarphp/zippykid-sprite.png') no-repeat 0 0; margin-left:100px; }
+			#zippykid:hover { background-position:0 -92px; }
+		#allplayers { width:350px; height:63px; margin:2em auto 1em; background:url('/assets/img/lonestarphp/allplayers-sprite.png') no-repeat 0 0; margin-left:100px;}
+			#allplayers:hover { background-position:0 -63px; }
 	
 	#schedule {}
 		#schedule h2 { 
